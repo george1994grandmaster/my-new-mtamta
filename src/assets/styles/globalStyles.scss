@@ -1,0 +1,75 @@
+.p-relative {
+	position: relative;
+}
+
+.p-absolute {
+	position: absolute;
+}
+
+.d-flex {
+  display: flex;
+}
+    
+.ai-center {
+  align-items: center;
+}
+
+.jc-center {
+	justify-content: center;
+}
+
+.jc-between {
+	justify-content: space-between;
+}
+
+.fd-column {
+	flex-direction: column;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.bg-bright {
+	background-color: $bright;
+}
+
+.bg-light {
+	background-color: $light;
+}
+
+.bg-dark {
+	background-color: $dark;
+}
+
+.bright {
+	color: $bright;
+}
+
+.light {
+	color: $light;
+}
+
+.dark {
+	color: $dark;
+}
+
+p, span, label, button, a, .title, .text {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.fw-strong {
+	font-weight: $fontStrong;
+}
+
+.fw-bold {
+	font-weight: $fontbold;
+}
+
+.fw-middle {
+	font-weight: $fontMiddle;
+}

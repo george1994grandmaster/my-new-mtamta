@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
+@import './variables';
+@import './globalStyles';
+@import './header';
+@import './home';
+@import './slider';
+
+
+
+body {
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.dark-wrapper {
+  width: 100%;
+  background-color: $dark;
+}
+
+.image-text-layout {
+	display: flex;
+	margin-bottom: 70px;
+}
+
+.text-image-layout {
+  display: flex;
+  align-items: center;
+}
+
+.text-layout-col, .image-layout-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.image-layout-col {
+  img {
+    display: block;
+    height: 30vw;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.layout-title {
+  margin-bottom: 40px;
+  font-size: calc(14px + 1.1vw);
+  //text-align: center;
+}
+
+.layout-text {
+  font-size: calc(14px + 0.1vw);
+  line-height: 1.4;
+}
+
+
+
+
+

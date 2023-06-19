@@ -1,0 +1,54 @@
+.guide-promo-content{
+  padding: 70px 0;
+}
+
+.guide-promo-main-title {
+	margin-bottom: 70px;
+	color: $light;
+	font-size: calc(13px + 1.5vw);
+	font-weight: $fontStrong;
+	text-align: center;
+}
+
+.guide-promo-section {
+	display: flex;
+	align-items: center;
+}
+
+.guide-promo-image {
+	flex: 0 0 50%;
+	max-width: 50%;
+
+	img {
+		height: 30vw;
+	}
+}
+
+@media (min-width: 1200px) {
+	.guide-promo-text-content {
+		padding-left: 70px;
+	}
+}
+
+.guide-promo-title {
+	margin-bottom: 50px;
+	color: $light;
+	font-size: calc(13px + 1vw);
+}
+
+
+.guide-promo-text {
+	color: $light;
+	font-size: calc(14px + 0.1vw);
+	font-weight: $fontbold;
+	line-height: 1.5;
+}
+
+.become-guide-wrapper {
+	padding: 70px 0;
+
+	.text-content-spacing {
+		padding: 0 80px;
+	}
+}
+
