@@ -1,5 +1,6 @@
 import  { FC } from 'react';
 import HomeBannerSlider from './swiperSliders/homeSlider';
+import BlogSlider from './swiperSliders/blogSlider';
 
 interface SliderProps {
   sliderName: string;
@@ -11,13 +12,11 @@ const Slider: FC<SliderProps> = ({ sliderName }) => {
       return (
         <HomeBannerSlider/>
       );
-    case 'slider2':
-      return (
-        <div className="slider2">
-         dfdfddfd
-        </div>
-      );
-    default:
+      case 'blogSlider':
+        return (
+          <BlogSlider/>
+        );
+      default:
       return (
         <div className="slider-default">
           ssdsdsdsd

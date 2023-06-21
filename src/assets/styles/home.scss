@@ -18,7 +18,6 @@
 .guide-promo-image {
 	flex: 0 0 50%;
 	max-width: 50%;
-
 	img {
 		height: 30vw;
 	}
@@ -46,9 +45,96 @@
 
 .become-guide-wrapper {
 	padding: 70px 0;
+}
 
-	.text-content-spacing {
-		padding: 0 80px;
+.text-content-spacing {
+	padding: 0 80px;
+}
+
+.complete-text-navigate {
+	display: flex;
+	justify-content: flex-end;
+	a {
+		width: 38%;
+		svg {
+			display: block;
+			width: 100%;
+			path {
+				transition: all 0.3s ease-in-out;
+			}
+			&:hover {
+				path {
+					fill: $bright;
+				}
+			}
+		}
 	}
 }
 
+.darkPattern,.brightPattern {
+	width: 100%;
+	img {
+		display: block;
+	}
+}
+
+.darkPattern {
+	transform:translateY(-1px);
+}
+
+.brightPattern {
+	transform:translateY(1px);
+}
+
+
+.partners-wrapper {
+	padding: 70px 0 50px 0;
+}
+
+.partners-content {
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.partners-logo-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.partnersLogo {
+	width: 20%;
+	margin-bottom: 80px;
+}
+
+.partners-title {
+	margin-bottom: 100px;
+	color: $dark;
+	font-size: calc( 30px + 1.5vw);
+	font-weight: 600;
+	text-align: center;
+}
+
+.blog-media-banner-content {
+	padding-top: 250px;
+	padding-bottom: 50px;
+}
+
+.blog-media-banner {
+	width: 50%;
+	padding: 0 40px;
+}
+
+.homeStarImg {
+	position: absolute;
+	bottom: 50px;
+	right: 100px;
+	width: 20vw;
+}
+
+.blogSwiper {
+	.swiper-slide {
+		padding-right: 70px;
+	}
+}
+ 

@@ -15,16 +15,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-#root {
-  scroll-behavior: smooth;
 }
 
 * {
@@ -47,9 +42,17 @@ img {
 }
 
 .dark-wrapper {
+  position: relative;
   width: 100%;
   background-color: $dark;
 }
+
+.bright-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: $bright;
+}
+
 
 .image-text-layout {
 	display: flex;
@@ -78,6 +81,19 @@ img {
     }
   }
 }
+.swiper {
+  .image-layout-col {
+    img {
+      display: block;
+      height: 30vw;
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+}
 
 .layout-title {
   margin-bottom: 40px;
@@ -87,7 +103,33 @@ img {
 
 .layout-text {
   font-size: calc(14px + 0.1vw);
-  line-height: 1.4;
+  line-height: 1.3;
+}
+
+.left-vertical-border, .right-vertical-border {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: lightGrey;
+  &.border-cut {
+    height: calc(100% - 30px);
+    margin-top: 30px;
+  }
+}
+
+.left-vertical-border {
+  left: 70px;
+}
+
+.right-vertical-border {
+  right: 70px;
+}
+
+.horizonatal-border {
+  width: 100%;
+  height: 1px;
+  background-color: lightGrey;
 }
 
 

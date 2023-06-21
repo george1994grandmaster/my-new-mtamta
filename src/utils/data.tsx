@@ -1,3 +1,17 @@
+import partnersLogo1 from '../assets/img/partnersLogo1.png';
+import partnersLogo2 from '../assets/img/partnersLogo2.png';
+import partnersLogo3 from '../assets/img/partnersLogo3.png';
+import partnersLogo4 from '../assets/img/partnersLogo4.png';
+import partnersLogo5 from '../assets/img/partnersLogo5.png';
+import partnersLogo6 from '../assets/img/partnersLogo6.png';
+import partnersLogo7 from '../assets/img/partnersLogo7.png';
+import partnersLogo8 from '../assets/img/partnersLogo8.png';
+import partnersLogo9 from '../assets/img/partnersLogo9.png';
+import landshaft from '../assets/img/landshaft.png';
+import shareReaders from '../assets/img/shareReaders.png';
+import ecosystem from '../assets/img/ecosystem.png';
+
+
 export  const headerLinksData = [
   { path: '/story', label: 'OUR STORY' },
   { path: '/guide-marathon', label: 'GUIDE MARATHON' },
@@ -40,4 +54,51 @@ export const mainBecomeBlocks = [
   },
 ];
 
+export const logos = [
+  { image: partnersLogo1 },
+  { image: partnersLogo2 },
+  { image: partnersLogo3 },
+  { image: partnersLogo4 },
+  { image: partnersLogo5 },
+  { image: partnersLogo6 },
+  { image: partnersLogo7 },
+  { image: partnersLogo8 },
+  { image: partnersLogo9 },
+  // Add more logo objects as needed
+];
+
+
+interface slide {
+  id: number
+  title: string;
+  text: string;
+  image:string;
+}
+
+export const blogMediaSlides: slide[] = [
+  {
+    id: 1,
+    title: "Essential Gear for Mountain Adventurers",
+    text: "Discover the must-have gear and equipment for mountain exploration. From hiking boots to navigation tools, ensure you're well-prepared for your next adventure in the mountains",
+    image: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2017/11/27/27178ecc-ecae-47e3-ad37-75b1224626d8/everest-kit"
+  },
+  {
+    id: 2,
+    title: "Capturing Breathtaking Mountain Landscapes",
+    text: "Learn the art of photographing stunning mountain landscapes. Gain insights into composition, lighting, and post-processing techniques to capture the beauty of mountains in your blog media.",
+    image: landshaft
+  },
+  {
+    id: 3,
+    title: "Navigating Challenging Terrain: Tips for Mountain Hikers",
+    text: "Explore essential tips and techniques for hiking in challenging mountain terrains. From route planning to safety precautions, enhance your mountain hiking skills and share valuable insights with your readers.",
+    image: shareReaders
+  },
+  {
+    id: 4,
+    title: "Exploring Alpine Flora and Fauna",
+    text: "Delve into the fascinating world of alpine flora and fauna. Learn about unique plant species, wildlife encounters, and conservation efforts in mountain ecosystems to enrich your mountain guide blog.",
+    image: ecosystem
+  },
+];
 

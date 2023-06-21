@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import { FC } from 'react';
+import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { EffectFade, Navigation } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
@@ -6,9 +7,10 @@ import { homeSliderBannerimages } from '../../utils/data';
 import "swiper/css/navigation";
 import bannerArrowSvg from '../../assets/img/bannerArrow.svg';
 
+
 SwiperCore.use([EffectFade, Navigation]);
 
-const BannerSlider: React.FC = () => {
+const HomeBannerSlider:FC = () => {
   const prevRef = useRef<HTMLDivElement | null>(null);
   const nextRef = useRef<HTMLDivElement | null>(null);
   const swiperRef = useRef<SwiperCore | null>(null);
@@ -49,7 +51,6 @@ const BannerSlider: React.FC = () => {
           <img src={banner.src} alt={`Slide ${banner.id}`} />
         </SwiperSlide>
       ))}
-
       <div ref={prevRef} className="swiper-button-prev" onClick={handlePrevClick}> 
         <img src={bannerArrowSvg} style={{ transform: "scaleX(-1)" }} alt="prev"  />
       </div> 
@@ -60,4 +61,4 @@ const BannerSlider: React.FC = () => {
   );
 };
 
-export default BannerSlider;
+export default HomeBannerSlider;

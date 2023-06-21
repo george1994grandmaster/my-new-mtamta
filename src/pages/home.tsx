@@ -1,7 +1,14 @@
 
+import { Link } from 'react-router-dom';
 import Slider from "../components/slider";
 import guidePromo from "../assets/img/guidePromo.png";
+import darkPattern from "../assets/img/darkPattern.svg";
+import starComplete from "../assets/img/starComplete.svg";
+import blogMedia from "../assets/img/blogMedia.svg";
+import brightPattern from "../assets/img/brightPattern.svg";
+import {CompleteTextNavigate} from "../assets/svgFormatComponents";
 import {mainBecomeBlocks} from "../utils/data";
+import {logos} from "../utils/data";
 
 const Home = () => {
   return (
@@ -65,8 +72,49 @@ const Home = () => {
                 )}
               </div>
             ))}
-            <h1 className="title become-see-more">SEE MORE</h1>
+            <div className="complete-text-navigate">
+              <Link to='/becomeGuide' >
+                <CompleteTextNavigate/>
+              </Link>
+            </div>
           </div>
+        </div>
+      </div>
+      <div className="darkPattern">
+        <img src={darkPattern} alt="darkPattern"/>
+      </div>
+      <div className="partners-wrapper">
+        <div className="contaner">
+          <div className="partners-content">
+            <h3 className="partners-title title">OUR PARTNERS</h3>
+            <div className="partners-logo-content">
+              {logos.map((logo, index) => (
+                <div key={index} className="partnersLogo">
+                  <img src={logo.image} alt="partners-logo" />
+                </div>
+                ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="brightPattern">
+        <img src={brightPattern} alt="brightPattern"/>
+      </div>
+      <div className="bright-wrapper" style={{paddingTop: "30px"}}>
+        <div className="horizonatal-border"></div>
+        <div className="left-vertical-border border-cut"></div>
+        <div className="right-vertical-border border-cut"></div>
+        <div className="container">
+          <div className='blog-media-banner-content'>
+            <div className="blog-media-banner">
+              <img src={blogMedia} alt="blog-media"/>
+            </div>
+            <div className="homeStarImg">
+              <img src={starComplete} alt="homeStarImg"/>
+            </div>
+          </div>
+          <div className="horizonatal-border"></div>
+          <Slider sliderName={'blogSlider'}/>
         </div>
       </div>
     </>
