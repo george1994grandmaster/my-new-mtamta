@@ -1,6 +1,8 @@
 
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "../components/slider";
+import {gears} from "../utils/data";
 import guidePromo from "../assets/img/guidePromo.png";
 import darkPattern from "../assets/img/darkPattern.svg";
 import starComplete from "../assets/img/starComplete.svg";
@@ -8,9 +10,11 @@ import blogMedia from "../assets/img/blogMedia.svg";
 import brightPattern from "../assets/img/brightPattern.svg";
 import {CompleteTextNavigate} from "../assets/svgFormatComponents";
 import {mainBecomeBlocks} from "../utils/data";
-import {logos} from "../utils/data";
+import BecomeGuideBanner from "../components/scrollTriggerAnimation/becomeGuide"
 
-const Home = () => {
+
+const Home:FC = () => {
+  
   return (
     <>
       <div className="home-banner-slider">
@@ -39,6 +43,7 @@ const Home = () => {
             </div>
           </div>
           <div className="become-guide-wrapper">
+            <BecomeGuideBanner/>
             {mainBecomeBlocks.map((block, index) => (
               <div className="image-text-layout" key={block.id}>
                 {index % 2 === 0 ? ( // Check if the ID is even
@@ -46,8 +51,8 @@ const Home = () => {
                     <div className="text-layout-col bg-light">
                       <div className="d-flex ai-center jc-center h-100">
                         <div className="text-content-spacing">
-                          <h1 className="layout-title title dark fw-strong">{block.title}</h1>
-                          <p className="layout-text text dark fw-middle">{block.text}</p>
+                          <h1 className="layout-title title dark fw-bold">{block.title}</h1>
+                          <p className="layout-text text dark fw-light">{block.text}</p>
                         </div>
                       </div>
                     </div>
@@ -63,8 +68,8 @@ const Home = () => {
                     <div className="text-layout-col bg-bright">
                       <div className="d-flex ai-center jc-center h-100">
                         <div className="text-content-spacing">
-                          <h1 className="layout-title title light fw-strong">{block.title}</h1>
-                          <p className="layout-text text light fw-middle">{block.text}</p>
+                          <h1 className="layout-title title light fw-bold">{block.title}</h1>
+                          <p className="layout-text text light fw-light">{block.text}</p>
                         </div>
                       </div>
                     </div>
@@ -83,20 +88,20 @@ const Home = () => {
       <div className="darkPattern">
         <img src={darkPattern} alt="darkPattern"/>
       </div>
-      <div className="partners-wrapper">
-        <div className="contaner">
-          <div className="partners-content">
-            <h3 className="partners-title title">OUR PARTNERS</h3>
-            <div className="partners-logo-content">
-              {logos.map((logo, index) => (
-                <div key={index} className="partnersLogo">
-                  <img src={logo.image} alt="partners-logo" />
-                </div>
-                ))}
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="home-equipments-wrapper">
+			<div className="container">
+				<div className="equipments-content">
+					<h3 className="equipments-title title">NECESSARY EQUIPMENTS</h3>
+					<div className="equipments-logo-content">
+						{gears.map((gear, index) => (
+							<div key={index} className="equipments-logo">
+								<img src={gear.image} alt="equipments-img" />
+							</div>
+							))}
+					</div>
+				</div>
+			</div>
+		</div>
       <div className="brightPattern">
         <img src={brightPattern} alt="brightPattern"/>
       </div>
@@ -105,8 +110,8 @@ const Home = () => {
         <div className="left-vertical-border border-cut"></div>
         <div className="right-vertical-border border-cut"></div>
         <div className="container">
-          <div className='blog-media-banner-content'>
-            <div className="blog-media-banner">
+          <div className='blogMedia-banner-block'>
+            <div className="blogMedia-banner">
               <img src={blogMedia} alt="blog-media"/>
             </div>
             <div className="homeStarImg">
@@ -114,7 +119,9 @@ const Home = () => {
             </div>
           </div>
           <div className="horizonatal-border"></div>
-          <Slider sliderName={'blogSlider'}/>
+          <div className='blogMedia-slider-block'>
+            <Slider sliderName={'blogSlider'}/>
+          </div>
         </div>
       </div>
     </>

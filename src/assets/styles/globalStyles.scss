@@ -14,10 +14,21 @@
   align-items: center;
 }
 
+.ai-end {
+	align-items: flex-end;
+}
+
+.ai-start {
+	align-items: flex-start;
+}
+
 .jc-center {
 	justify-content: center;
 }
 
+.jc-start {
+	justify-content: start;
+}
 
 .jc-end {
 	justify-content: flex-end;
@@ -77,4 +88,8 @@ p, span, label, button, a, .title, .text {
 
 .fw-middle {
 	font-weight: $fontMiddle;
+   }
+
+.fw-light {
+   font-weight: $fontLight;
 }

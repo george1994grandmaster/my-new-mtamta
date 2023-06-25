@@ -10,12 +10,12 @@ import successArrow from '../../assets/img/successArrow.svg';
 
 SwiperCore.use([Navigation]);
 
-interface BlogSliderProps {
+interface StorySliderProps {
   handlePrevClick: () => void;
   handleNextClick: () => void;
 }
 
-const BlogSlider: FC<BlogSliderProps> = ({ handlePrevClick, handleNextClick }) => {
+const StorySlider: FC<StorySliderProps> = ({ handlePrevClick, handleNextClick }) => {
   return (
     <Swiper
       speed={600}
@@ -64,4 +64,4 @@ const BlogSlider: FC<BlogSliderProps> = ({ handlePrevClick, handleNextClick }) =
   );
 };
 
-export default BlogSlider;
+export default StorySlider;

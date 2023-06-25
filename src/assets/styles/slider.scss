@@ -2,17 +2,31 @@
 	height: 100%;
 }
 
-.home-banner-slider {
-	.swiper {
-		.swiper-button-prev {
-			left: 50px;
-			width: auto;
-		}
-		
-		.swiper-button-next {
-			right: 50px;
-			width: auto;
-		}
+.blog-swiper {
+	
+	.swiper-slide {
+		padding-right: 70px;
+	}
+}
+ 
+
+.home-swiper {
+
+	.swiper-button-prev {
+		left: 50px;
+		width: auto;
+	}
+	
+	.swiper-button-next {
+		right: 50px;
+		width: auto;
+	}
+}
+
+.blog-swiper {
+
+	.swiper-button-prev, .swiper-button-next {
+		width: 33px;
 	}
 }
 
@@ -29,6 +43,7 @@
 	height: calc(100vh - 103px);
 
 	img {
+		display: block;
 		height: 100%;
 	}
 }
