@@ -10,6 +10,15 @@ import helmet from '../assets/img/helmet.png';
 import landshaft from '../assets/img/landshaft.png';
 import route from '../assets/img/route.png';
 import ecosystem from '../assets/img/ecosystem.png';
+import mountWithney from '../assets/img/mountWithney.png';
+import mountKarakoram from '../assets/img/karakoram.png';
+import mountCook from '../assets/img/mountCook.png';
+import mountMatterhorn from '../assets/img/mountMatterhorn.png';
+import mountMoncBlanc from '../assets/img/mountMoncBlanc.png';
+import mountKilimanjaro from '../assets/img/mountKilimanjaro.png';
+import mountAconcagua from '../assets/img/mountAconcagua.png';
+import mountElbrus from '../assets/img/mountElbrus.png';
+
 
 interface headerDatas {
   path: string;
@@ -155,6 +164,71 @@ export const overlayText: overlayText[] = [
         Mountain Rescue Team: Our collaboration prioritizes client safety with preparedness and emergency response capabilities.\
         Local Guides Association: We connect clients with experienced guides who offer unique insights into the local culture, history, and natural wonders.\
         Together, we create extraordinary mountain experiences while supporting local communities and protecting the mountains' pristine environments."
+  },
+];
+
+interface mountSlides {
+  id: number;
+  image: string;
+  title: string;
+  text: string;
+}
+
+export const mountainSlider: mountSlides[] = [
+  {
+    id: 1,
+    image: mountWithney,
+    title: "Conquering the Tallest Peak in the United States - Mount Whitney",
+    text: "Embark on an awe-inspiring journey to conquer the towering heights of Mount Whitney, located in the United States."
+  },
+    
+  {
+    id: 2,
+    image: mountKarakoram,
+    title: "Conquering the Mighty Karakoram Range",
+    text :  "Embark on a daring expedition to conquer the formidable peaks of the Karakoram Range, spanning Pakistan, India, and China."
+  },
+
+  {
+    id: 3,
+    image: mountCook,
+    title: "Conquering the Magnificent Mount Cook in New Zealand",
+    text:  "Experience the thrill of conquering the majestic heights of Mount Cook, the highest peak in New Zealand.",
+  },
+
+  {
+    id: 4,
+    image: mountMatterhorn,
+    title: "Conquering the Iconic Matterhorn in the Swiss Alps",
+    text: "Challenge yourself to conquer the iconic Matterhorn, an emblem of the Swiss Alps and a symbol of mountaineering"
+  },
+  
+  {
+    id: 5,
+    image: mountMoncBlanc,
+    title: "Conquering the Majestic Mont Blanc in the French Alps",
+    text: "Embark on an unforgettable journey to conquer the majestic heights of Mont Blanc, the highest peak in the Alps"
+  },
+  
+  {
+    id: 6,
+    image: mountKilimanjaro,
+    title: "Conquering the Roof of Africa - Mount Kilimanjaro",
+    text: "Embark on an extraordinary adventure to conquer the legendary Mount Kilimanjaro, the highest peak in Africa"
+  },
+  
+  {
+    id: 7,
+    image: mountAconcagua,
+    title: "Conquering the Majestic Aconcagua in the Andes",
+    text: "Take on the ultimate challenge of conquering the towering heights of Aconcagua, the highest peak in the Andes"
+  },
+
+  {
+    id: 8,
+    image: mountElbrus,
+    title: "Conquering the Mighty Mount Elbrus in Russia",
+    text: "Embark on an epic expedition to conquer the mighty heights of Mount Elbrus, the highest peak in Europe"
   },
 ];
 

@@ -1,14 +1,11 @@
-import { FC } from 'react';
+import { FC, useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, {Parallax, Scrollbar, Navigation } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-import NavigationLink from '../link';
-import { blogMediaSlides } from '../../utils/data';
-import "swiper/css/navigation";
+import { mountainSlider } from '../../utils/data';
 import successArrow from '../../assets/img/successArrow.svg';
 
-
-SwiperCore.use([Navigation]);
+SwiperCore.use([Scrollbar, Navigation]);
 
 interface StorySliderProps {
   handlePrevClick: () => void;
@@ -16,49 +13,63 @@ interface StorySliderProps {
 }
 
 const StorySlider: FC<StorySliderProps> = ({ handlePrevClick, handleNextClick }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef<any>(null);
+
+  const handleSlideChange = () => {
+    if (swiperRef.current) {
+      setActiveIndex(swiperRef.current.realIndex);
+    }
+  };
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      setActiveIndex(swiperRef.current.realIndex);
+    }
+  }, []);
+
   return (
     <Swiper
-      speed={600}
+      speed={1200}
+      parallax={true}
       grabCursor
-      className="swiper blog-swiper"
+      slidesPerView={2}
+      slidesPerGroup={1}
+      scrollbar={{ draggable: true }}
+      loop
+      className="swiper story-swiper"
       navigation={{
         prevEl: '.swiper-button-prev',
         nextEl: '.swiper-button-next',
       }}
-      loop
-      modules={[Navigation]}
+      modules={[Parallax, Scrollbar, Navigation]}
+      centeredSlides
+      keyboard={true}
+      onSlideChange={handleSlideChange}
+      onSwiper={(swiper) => {
+        swiperRef.current = swiper;
+      }}
     >
-      {blogMediaSlides.map((blogMediaSlide) => (
-        <SwiperSlide key={blogMediaSlide.id}>
-          <div className="image-text-layout">
-            <div className="text-layout-col">
-              <div className="d-flex ai-center jc-center h-100">
-                <div className='text-content-spacing'>
-                  <h2 className="layout-title light title">
-                    {blogMediaSlide.title}
-                  </h2>
-                  <p className="layout-text light text text-bottom-space">
-                    {blogMediaSlide.text}
-                  </p>
-                  <div className='d-flex ai-end jc-between'>
-                    <NavigationLink url={`blog/view${blogMediaSlide.id}`} text="see more" 
-                      bgColor="transparent" color="#fff" border="1px solid #fff" hoveredBackground="#fff" hoveredColor="#F05E47"/>
-                    <span className='text date light'>{blogMediaSlide.date}</span>
-                  </div>
-                </div>
+      {mountainSlider.map((el, index) => (
+        <SwiperSlide key={el.id}>
+          <div className={`slides-space ${index === activeIndex ? "active-slide" : ''}`}>
+            <div className='story-mentioned-container'>
+              <div>
+                <img src={el.image} alt={`Slide ${el.id}`} />
               </div>
-            </div>
-            <div className="image-layout-col">
-              <img src={blogMediaSlide.image} alt="mediaBlog-slide-img" />
+              <div className="story-mentioned-content" >
+                <h4 className="story-mentioned-title dark title fw-bold" data-swiper-parallax="-1000">{el.title}</h4>
+                <p className="story-mentioned-text dark text fw-middle" data-swiper-parallax="-2000">{el.text}</p>
+              </div>
             </div>
           </div>
         </SwiperSlide>
       ))}
       <div className="swiper-button-prev" onClick={handlePrevClick}>
-        <img src={successArrow}  alt="prev" />
+        <img src={successArrow} alt="prev" />
       </div>
       <div className="swiper-button-next" onClick={handleNextClick}>
-        <img src={successArrow} style={{ transform: "scaleX(-1)" }} alt="Next" />
+        <img src={successArrow} alt="Next" style={{ transform: "scaleX(-1)" }} />
       </div>
     </Swiper>
   );

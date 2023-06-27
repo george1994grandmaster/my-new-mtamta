@@ -1,7 +1,7 @@
 import React, { FC, useRef } from 'react';
 import HomeBannerSlider from './swiperSliders/homeSlider';
 import BlogSlider from './swiperSliders/blogSlider';
-import StorySlider from './swiperSliders/blogSlider';
+import StorySlider from './swiperSliders/storySlider';
 import SwiperCore from 'swiper';
 
 interface SliderProps {
