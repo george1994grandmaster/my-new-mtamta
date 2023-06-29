@@ -9,7 +9,9 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <div className='container-fluid'>
+        <Outlet />
+      </div>
     </>
   );
 };

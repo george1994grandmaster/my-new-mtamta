@@ -22,7 +22,7 @@ const Home:FC = () => {
       </div>
       <div className="dark-wrapper">
         <div className="container">
-          <div className="guide-promo-content">
+          <div className="vertical-middle-spacing">
             <h1 className="guide-promo-main-title title">
               Expert Mountain Guides for Unforgettable Adventures
             </h1>
@@ -119,7 +119,7 @@ const Home:FC = () => {
             </div>
           </div>
           <div className="horizonatal-border"></div>
-          <div className='blogMedia-slider-block'>
+          <div className="vertical-large-spacing">
             <Slider sliderName={'blogSlider'}/>
           </div>
         </div>

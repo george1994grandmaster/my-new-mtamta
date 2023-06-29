@@ -4,6 +4,7 @@
 @import './header';
 @import './home';
 @import './story';
+@import './marathon';
 @import './slider';
 
 
@@ -30,6 +31,11 @@ code {
 img {
   width: 100%;
   object-fit: cover;
+}
+
+.container-fluid {
+  position: relative;
+  padding-top: 90px;
 }
 
 .container {

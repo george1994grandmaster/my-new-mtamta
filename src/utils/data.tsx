@@ -93,7 +93,6 @@ export const gears: gear[] = [
   { image: belayDevice },
   { image: helmet },
   { image: crampons },
-  // Add more logo objects as needed
 ];
 
 
@@ -232,5 +231,15 @@ export const mountainSlider: mountSlides[] = [
   },
 ];
 
+interface marathonTitle {
+  title: string
+}
 
+
+export const marathonTitles: marathonTitle[] = [
+  {title: "EXPLORE"},
+  {title: "EXPEDITIONS"},
+  {title: "CHALLENGE"},
+  {title: "SUMMIT"}
+];
 

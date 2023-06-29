@@ -1,11 +1,11 @@
 import { FC, useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {Parallax, Scrollbar, Navigation } from 'swiper';
+import SwiperCore, {Parallax, Navigation } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import { mountainSlider } from '../../utils/data';
 import successArrow from '../../assets/img/successArrow.svg';
 
-SwiperCore.use([Scrollbar, Navigation]);
+SwiperCore.use([ Navigation]);
 
 interface StorySliderProps {
   handlePrevClick: () => void;
@@ -35,14 +35,13 @@ const StorySlider: FC<StorySliderProps> = ({ handlePrevClick, handleNextClick })
       grabCursor
       slidesPerView={2}
       slidesPerGroup={1}
-      scrollbar={{ draggable: true }}
       loop
       className="swiper story-swiper"
       navigation={{
         prevEl: '.swiper-button-prev',
         nextEl: '.swiper-button-next',
       }}
-      modules={[Parallax, Scrollbar, Navigation]}
+      modules={[Parallax, Navigation]}
       centeredSlides
       keyboard={true}
       onSlideChange={handleSlideChange}
