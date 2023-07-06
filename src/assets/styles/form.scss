@@ -1,0 +1,91 @@
+
+.bright-border-overlay {
+  border-right: 15px solid $bright;
+  border-bottom: 15px solid $bright;
+  border-radius: 50px;
+  background: linear-gradient(90deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(180deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(270deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(360deg, $dark 70px, transparent 70px, transparent),
+}
+
+
+.dark-border-overlay {
+  border-top: 15px solid $dark;
+  border-left: 15px solid $dark;
+  border-radius: 50px;
+  background: linear-gradient(90deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(180deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(270deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(360deg, $dark 70px, transparent 70px, transparent),
+}
+
+
+
+.register-overlay-container {
+  display: flex;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 100px 0 150px 0;
+
+  .right-top-star {
+    bottom: 80%;
+    right: -40px;
+    width: 80px;
+    z-index: 9999;
+  }
+
+  .left-middle-star {
+    top: 60%;
+    left: -60px;
+    width: 100px;
+    z-index: 9999;
+  }
+
+  .right-bottom-star {
+    top: 80%;
+    right: -40px;
+    width: 70px;
+    z-index: 9999;
+  }
+}
+
+form {
+  .MuiButton-root {
+    padding: 6px 20px;
+    font-size: calc(12px + 0.1vw);
+    font-family: "Montserrat", sans-serif;
+
+    &:hover {
+      background-color: $bright;
+    }
+  }
+}
+
+.register-form-container {
+  position: relative;
+  padding: 40px 70px;
+  border-radius: 35px;
+  background-color: $light;
+  
+  & .form-light-content {
+
+    .MuiInputBase-root {
+      border-bottom: 1px solid $dark;
+    }
+  }
+}
+
+.register-form-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: calc(18px + 0.4vw);
+}
+
+.register-form-btn {
+  width: 100%;
+  margin: 20px 0;
+  text-align: right;
+}
+

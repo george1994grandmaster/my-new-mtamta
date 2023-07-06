@@ -1,27 +1,31 @@
+import { FC, MouseEventHandler } from "react";
+import Button, { ButtonProps } from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
-import { FC } from "react";
-/*import Button, { ButtonProps } from '@mui/material/Button';
-
-interface BtnProps extends ButtonProps {
+interface BtnProps {
   text: string;
   bgColor: string;
-  border: string;
-  Color: string;
+  hoverBgColor: string;
+  color: string;
+  space: string;
+  handleClick?: () => void; //MouseEventHandler<HTMLButtonElement>;
 }
 
-const Btn: FC<BtnProps> = ({ text, ...props }) => {
+const Btn: FC<BtnProps> = ({ text, handleClick, ...props }) => {
   const buttonStyles = {
-    padding: '10px 40px',
-    border: props.border,
-    color: props.Color,
-    backgroundColor: props.bgColor
+    padding: props.space,
+    color: props.color,
+    backgroundColor: props.bgColor,
+    '&:hover': {
+      backgroundColor: props.hoverBgColor,
+    },
   };
 
   return (
-    <Button style={buttonStyles} >
-      {text}
+    <Button sx={buttonStyles} className="title" onClick={handleClick}>
+      <Typography variant="button" component="span" sx={{ fontFamily: "Montserrat, sans-serif", textTransform: "none" }}>{text}</Typography>
     </Button>
   );
 };
 
-export default Btn;*/
+export default Btn;

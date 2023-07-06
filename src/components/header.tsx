@@ -14,7 +14,7 @@ const Header: FC = () => {
       case '/story':
         return '#003642';
       case '/guide-marathon':
-      case '/becomeGuide':
+      case '/become-guide':
       case '/media':
         return '#F05E47';
       default:

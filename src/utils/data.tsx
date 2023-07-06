@@ -18,6 +18,18 @@ import mountMoncBlanc from '../assets/img/mountMoncBlanc.png';
 import mountKilimanjaro from '../assets/img/mountKilimanjaro.png';
 import mountAconcagua from '../assets/img/mountAconcagua.png';
 import mountElbrus from '../assets/img/mountElbrus.png';
+import news1 from '../assets/img/news1.png';
+import news2 from '../assets/img/news2.png';
+import news3 from '../assets/img/news3.png';
+import news4 from '../assets/img/news4.png';
+import news5 from '../assets/img/news5.png';
+import news6 from '../assets/img/news6.png';
+import news7 from '../assets/img/news7.png';
+import news8 from '../assets/img/news8.png';
+import news9 from '../assets/img/news9.png';
+import news10 from '../assets/img/news10.png';
+import news11 from '../assets/img/news11.png';
+import news12 from '../assets/img/news12.png';
 
 
 interface headerDatas {
@@ -235,7 +247,6 @@ interface marathonTitle {
   title: string
 }
 
-
 export const marathonTitles: marathonTitle[] = [
   {title: "EXPLORE"},
   {title: "EXPEDITIONS"},
@@ -243,3 +254,213 @@ export const marathonTitles: marathonTitle[] = [
   {title: "SUMMIT"}
 ];
 
+interface accord {
+  question: string;
+  answer: string;
+}
+
+export const accordion: accord[] = [
+  {
+    question: "How experienced are the marathon mountain guides?",
+    answer: "Our marathon mountain guides are highly experienced and have extensive knowledge of the local terrain. They have undergone specialized training and have a deep understanding of the challenges and requirements of marathon-level hiking and running."
+  },
+
+  {
+    question: "What is the typical duration of a marathon mountain guiding session?",
+    answer: "The duration of a marathon mountain guiding session typically varies depending on the specific route and individual capabilities. On average, it can range from 4 to 8 hours, considering the distance, elevation gain, and desired pace."
+  }, 
+
+  {
+    question: "What safety measures do the marathon guides have in place?",
+    answer: "Our marathon guides prioritize safety and adhere to strict safety protocols. They are trained in wilderness first aid and carry essential safety equipment such as communication devices, first aid kits, and emergency supplies. They also closely monitor weather conditions and adjust plans accordingly."
+  },
+
+  {
+    question: "Are there any specific requirements or prerequisites for joining a marathon mountain guiding session?",
+    answer: "Participants should have a basic level of fitness and endurance to undertake a marathon-level mountain guiding session. It is also recommended to have some prior hiking or running experience. Specific requirements and prerequisites may vary based on the difficulty level and technicality of the route."
+  },
+
+  {
+    question: "How much does it cost to hire a marathon mountain guide?",
+    answer: "The cost of hiring a marathon mountain guide can vary based on factors such as the duration of the session, the expertise of the guide, and any additional services provided. It is best to contact us directly to inquire about current pricing and package options."
+  },
+
+  {
+    question: "What kind of equipment should participants bring for a marathon mountain guiding session?",
+    answer: "Participants should bring appropriate hiking or trail running gear, including sturdy footwear, weather-appropriate clothing, a backpack with essentials (water, snacks, extra layers), a headlamp, a map or GPS device, and a personal first aid kit. Our guides can provide a detailed gear list based on the specific requirements of the session."
+  },
+
+  {
+    question: "Can marathon mountain guides accommodate different skill levels and fitness levels?",
+    answer: "Yes, our marathon mountain guides can accommodate various skill and fitness levels. They are skilled at adapting the pace and difficulty level of the session to meet the needs and abilities of the participants. Whether you are a seasoned trail runner or a recreational hiker, our guides will strive to provide a tailored experience for you."
+  }
+];
+
+interface accordTitle {
+  title: string;
+}
+
+export const accordionMainTitle: accordTitle[] = [
+  {
+    title: "Frequently",
+  },
+
+  {
+    title: "Asked",
+  },
+
+  {
+    title: "Questions"
+  },
+]
+
+interface newsCards {
+  id: number;
+  image: string;
+  title: string;
+  text: string;
+  completeText: string;
+}
+
+export const newsCards: newsCards[] = [
+  {
+    id: 1,
+    image: news1,
+    title: "Alpine Marathon Unveils New Eco-Friendly Initiatives: Preserving the Mountain Playground",
+    text: "In a groundbreaking move, the Alpine Marathon introduces innovative eco-friendly initiatives. From biodegradable race bibs to zero-waste aid stations, this event sets a new standard for sustainable mountain racing. With a commitment to minimizing environmental impact, the Alpine Marathon aims to preserve the pristine beauty of the alpine environment for future generations",
+    completeText: "In a groundbreaking move aimed at preserving the pristine beauty of the alpine environment, the Alpine Marathon introduces a series of innovative eco-friendly initiatives. From the use of biodegradable race bibs to the establishment of zero-waste aid stations, this event sets a new standard for sustainable mountain racing. By minimizing its environmental impact, the Alpine Marathon is committed to ensuring that future generations can continue to revel in the awe-inspiring beauty of the mountains while participating in an unforgettable race experience."
+  },
+
+  {
+    id: 2,
+    image: news2,
+    title: " Alpine Marathon Celebrates Milestone Anniversary: A Decade of Mountain Running Excellence",
+    text: "It's a milestone year for the Alpine Marathon as it celebrates a decade of unforgettable alpine racing. This prestigious event has become synonymous with challenging trails, breathtaking views, and a sense of camaraderie among participants. Join the celebration and be part of the legacy that has inspired countless athletes to conquer the mountains.",
+    completeText: "Get ready to celebrate as the Alpine Marathon marks a momentous milestone, commemorating a decade of exhilarating alpine racing. For ten extraordinary years, this iconic event has pushed the boundaries of endurance, challenged participants to conquer rugged trails, and rewarded them with breathtaking views. Join the festivities and be part of the legacy that has inspired countless athletes to embrace the spirit of adventure and triumph over the mountains."
+  },
+
+  {
+    id: 3,
+    image: news3,
+    title: "Alpinists Conquer New Heights at Alpine Marathon Vertical Challenge",
+    text: "The Alpine Marathon Vertical Challenge brings together fearless alpinists for an extraordinary mountain adventure. Scaling steep ascents, navigating exposed ridgelines, and conquering technical terrain, these athletes push the limits of human endurance. Witness their triumphs and be inspired by their remarkable feats of alpine athleticism and sheer determination.",
+    completeText: "The Alpine Marathon goes beyond the realms of a mere race; it serves as a vibrant celebration of the rich cultural heritage found within alpine communities. Through collaborations with local organizations, this event provides an immersive experience, inviting runners and spectators to explore the unique traditions, savor the culinary delights, and immerse themselves in the warm hospitality of the mountain regions. Prepare for an extraordinary journey that not only tests your physical endurance but also exposes you to the vibrant tapestry of the alpine culture."
+  },
+
+  {
+    id: 4,
+    image: news4,
+    title: "Alpine Marathon Engages Local Communities: Promoting Cultural Exchange in Mountain Regions",
+    text: "The Alpine Marathon is not just a race; it's a catalyst for cultural exchange and community engagement. By partnering with local organizations, this event celebrates the unique traditions, heritage, and cuisine of alpine communities. Runners and spectators alike have the opportunity to immerse themselves in the rich culture of these mountain regions.",
+    completeText: "The Alpine Marathon calls out to the daring souls who seek to conquer the ultimate mountain challenge. Brace yourself for an awe-inspiring adventure that will test your limits and ignite your spirit of exploration. Navigate treacherous trails, scale imposing ascents, and marvel at the breathtaking beauty of the alpine landscape. With every step, you'll push beyond your perceived boundaries, discover your inner strength, and experience an unparalleled sense of accomplishment. Embrace the Alpine Marathon as your personal journey to conquer the mountains and unleash your true potential."
+  },
+
+  {
+    id: 5,
+    image: news5,
+    title: "Spectacular Sunrise Start for Alpine Marathon: A Picture-Perfect Beginning",
+    text: "The Alpine Marathon starts in awe-inspiring fashion with a breathtaking sunrise send-off. As dawn breaks over the majestic alpine peaks, runners embark on an unforgettable journey through nature's masterpiece. The stunning colors, crisp mountain air, and sense of anticipation create a truly magical atmosphere for the start of this iconic race.",
+    completeText: "Prepare to be mesmerized as the Alpine Marathon commences with an epic start that captures the essence of adventure in the alpine wonderland. As the first rays of dawn break over the majestic peaks, participants embark on a thrilling journey through nature's masterpiece. The stunning hues of the sky, the crisp mountain air, and the palpable sense of anticipation create a truly magical atmosphere for the start of this iconic race. Let the Alpine Marathon be your gateway to a world of extraordinary experiences and unforgettable memories."
+  },
+
+  {
+    id: 6,
+    image: news6,
+    title: "Alpine Marathon Expands International Partnerships: Uniting Mountain Communities",
+    text: "The Alpine Marathon strengthens its international ties by forging partnerships with other renowned mountain races around the world. This collaboration fosters a sense of global unity among mountain communities and provides opportunities for athletes to experience diverse alpine landscapes. Together, these races aim to promote mountain sports and foster a spirit of friendship and cooperation.",
+    completeText: "The Alpine Marathon is proud to strengthen its international ties by forging partnerships with other renowned mountain races around the world. This collaborative effort fosters a sense of global unity among mountain communities and offers athletes the chance to immerse themselves in diverse alpine landscapes. As these races join forces, they aim to promote mountain sports, inspire athletes from all corners of the globe, and foster a spirit of friendship and cooperation. Together, they create a tapestry of shared experiences and unforgettable adventures that transcend borders."
+  },
+
+  {
+    id: 7,
+    image: news7,
+    title: "Alpine Marathon Trailblazers: Pioneering Routes Through Uncharted Alpine Terrain",
+    text: "Adventurous trailblazers are redefining alpine marathon routes, exploring uncharted terrain, and uncovering hidden gems in the mountains. These bold explorers are designing innovative courses that challenge runners to navigate rugged landscapes, remote valleys, and pristine alpine meadows. Witness their pioneering spirit as they carve out new paths in the world of mountain racing.",
+    completeText: "Embark on a trailblazing adventure with the Alpine Marathon as it redefines alpine marathon routes, exploring uncharted terrain and unveiling hidden gems in the mountains. Fearless explorers are designing innovative courses that challenge runners to navigate rugged landscapes, remote valleys, and pristine alpine meadows. Witness their pioneering spirit as they carve out new paths in the world of mountain racing, pushing the boundaries of what's possible and inspiring a new generation of trailblazers to follow in their footsteps."
+  },
+
+  {
+    id: 8,
+    image: news8,
+    title: "Alpine Marathon Inspires Youth: Fostering the Next Generation of Mountain Athletes",
+    text: "The Alpine Marathon is on a mission to inspire the next generation of mountain athletes. Through educational programs, youth camps, and mentorship initiatives, young aspiring runners are introduced to the magic of alpine racing. The event fosters a love for the mountains, promotes a healthy lifestyle, and instills values of perseverance, teamwork, and environmental stewardship.",
+    completeText: " The Alpine Marathon is on a mission to inspire the next generation of mountain athletes. Through educational programs, youth camps, and mentorship initiatives, young aspiring runners are introduced to the magic of alpine racing. The event fosters a love for the mountains, promotes a healthy lifestyle, and instills values of perseverance, teamwork, and environmental stewardship. By nurturing the passion for mountain sports in young hearts, the Alpine Marathon ensures that the spirit of adventure will continue to thrive for years to come."
+  },
+
+  {
+    id: 9,
+    image: news9,
+    title: "Alpine Marathon's Futuristic Tech: Enhancing Safety and Race Experience",
+    text: "Embracing cutting-edge technology, the Alpine Marathon introduces futuristic innovations to enhance safety and the race experience. From GPS tracking devices that provide real-time updates to advanced weather monitoring systems, runners can navigate the alpine terrain with confidence. These tech advancements ensure participant well-being and add an extra layer of excitement to the event.",
+    completeText: "Embracing cutting-edge technology, the Alpine Marathon introduces futuristic innovations that enhance safety and elevate the race experience. From state-of-the-art GPS tracking devices that provide real-time updates on runner positions to advanced weather monitoring systems, participants can navigate the alpine terrain with confidence. These tech advancements ensure participant well-being, offer peace of mind to loved ones, and add an extra layer of excitement and anticipation to the event. Welcome to the future of mountain racing."
+  },
+
+  {
+    id: 10,
+    image: news10,
+    title: "Alpine Marathon Charity Run: Supporting Mountain Conservation and Local Projects",
+    text: "Lace up your shoes for the Alpine Marathon Charity Run, where participants go the extra mile for a meaningful cause. This philanthropic event raises funds to support mountain conservation efforts, promote sustainable tourism, and invest in local community projects. Every stride taken in this race contributes to preserving the pristine beauty of the alpine environment.",
+    completeText: "Lace up your shoes and join the Alpine Marathon Charity Run, where every step taken goes beyond personal accomplishment. This philanthropic event raises funds to support mountain conservation efforts, promote sustainable tourism, and invest in local community projects. By participating, you become a steward of the alpine environment, ensuring that its pristine beauty is preserved for future generations. With each stride, you make a meaningful impact and contribute to the sustainability of the mountains we hold dear."
+  },
+
+  {
+    id: 11,
+    image: news11,
+    title: "Alpine Marathon's Epic Finish Line: A Triumph Amidst Majestic Mountain Backdrop",
+    text: "The Alpine Marathon's epic finish line stands as a testament to the runners' resilience and determination. As participants cross the final marker, they are greeted by a breathtaking backdrop of towering alpine peaks and sweeping valleys. It's a moment of triumph, a celebration of their alpine journey, and a reminder of the indomitable spirit of the human quest for adventure.",
+    completeText: "As participants cross the Alpine Marathon's epic finish line, they are greeted by a breathtaking backdrop of towering alpine peaks, majestic valleys, and serene beauty. It's a moment of triumph, a celebration of their alpine journey, and a testament to the indomitable spirit of the human quest for adventure. With every arduous step taken, runners embody resilience, determination, and a profound connection to the mountains. Let the Alpine Marathon be your platform to embrace the grandeur of the finish line and savor a triumph that will forever remain etched in your memory."
+  },
+
+  {
+    id: 12,
+    image: news12,
+    title: "Alpine Marathon's Vision for the Future: Promoting Sustainable Mountain Racing",
+    text: "The Alpine Marathon looks ahead with a vision for sustainable mountain racing. By implementing eco-friendly practices, promoting responsible tourism, and embracing innovative technologies, this event aims to be a leader in environmentally conscious racing. With a commitment to preserving the alpine environment, the Alpine Marathon paves the way for a future where athletes can continue to experience the beauty of the mountains in harmony with nature.",
+    completeText: "The Alpine Marathon gazes into the future with a visionary approach to sustainable mountain racing. By implementing eco-friendly practices, promoting responsible tourism, and embracing innovative technologies, this event aims to be a leader in environmentally conscious racing. With a steadfast commitment to preserving the alpine environment, the Alpine Marathon paves the way for a future where athletes can continue to experience the beauty of the mountains in perfect harmony with nature. Join this movement towards sustainable adventure and be part of a transformative journey that leaves a positive impact on the world."
+  },
+]
+
+
+interface coursesSlideData {
+  id: number;
+  image: string;
+  title: string;
+  text: string;
+}
+
+export const courseSlides: coursesSlideData[] = [
+  {
+    id: 1,
+    image: news12,
+    text: "If you seek adventure on the mountain, climbing on cliffs, thrilling serials, and mingling with skiers, then the two-year diploma program for high-level international qualification in tourism is perfect for you. This physically demanding program offers an adrenaline-filled income that will take your career to new heights. Based on your learning outcomes, you can plan any type of adventure and desire, be it alpinism, free ride, or heli-ski tours. Accommodate guests in travel throughout all seasons of the year. Evaluate the relief and weather conditions, identify avalanche-prone areas, determine safe routes for departure and descent, and conduct rescue operations if necessary.",
+    title: "Mountain Guide"
+  },
+
+  {
+    id: 2,
+    image: news12,
+    text: "If you feel that the transition from a joyful life to a professional career is the right time, then the 8-week, multi-faceted program tailored specifically for you is waiting. The course is mainly focused on theoretical and practical training in high-level tourism. During the program, you will acquire skills in orientation and navigation, assessment of weather changes with natural indicators, knowledge of safety and rescue, risk management, and other important aspects. You will learn proper and effective communication with tourists and principles of crisis management. Upon completion of the course, you will be able to assess different landscapes and climatic zones, where trekking outside the alpine environment by foot is possible and glacier travel is required.",
+    title: "Trekking Guide"
+  },
+
+  {
+    id: 3,
+    image: news12,
+    text: "If you also have a passion for winter mountains, whether it's skiing or snowboarding, and you want to improve your performance based on the results achieved through competition or freeriding, then the 1-year program for snowboarders is perfect for you. In this program, you will learn various freeride techniques, mastering snowboarding skills, understanding avalanche safety, and other risks. The program not only focuses on correctly planning and executing safe tours but also includes mountain operations professionally. The course is designed for snowboarders/freeriders who wish to obtain internationally recognized knowledge and become certified professionals in the field of safety. Upon successful completion of the program, you will be able to accurately plan and execute not only touristic routes but also perform professionally in avalanche operations",
+    title: "SKI GUIDE"
+  },
+
+  {
+    id: 4,
+    image: news12,
+    text: "A 6-week intensive professional program for cycling enthusiasts has been developed to facilitate eco-friendly travel using various types of bicycles. The program covers different routes, including mountain trails, roads, auditoriums, and velodromes. During the course, along with multiple practical exercises, you will learn about general cycling routes, off-road navigation, effective communication with tourists, risk management, and technical support for cycling expeditions. Upon completion of the program, you will be able to plan and conduct safe, comfortable, and exciting cycling tours. The course is designed for experienced cyclists with different levels of physical fitness who are interested in starting or enhancing their professional career and contributing to the development of cycling",
+    title: "BIKE TOUR GUIDE"
+  },
+
+  {
+    id: 5,
+    image: news12,
+    text: "Domestic tourism is gaining popularity, and travelers expect services that meet international standards. To address this demand, we have created an intensive 10-week professional program focused on domestic tourism activities. The first part of the program revolves around understanding animals: their physiological and psychological characteristics, behavior, and handling in different situations. You will learn how to communicate with animals and interpret their body language. The second part of the program is dedicated to practical skills in the field of tourism: customer orientation, guiding techniques, route planning, and risk management. Upon completion of the course, you will be equipped to handle various types and durations of domestic tours and expeditions.",
+    title: "Equestrian Tour Guide"
+  }
+]

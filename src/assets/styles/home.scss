@@ -82,14 +82,6 @@
 	}
 }
 
-.darkPattern,.brightPattern {
-	width: 100%;
-
-	img {
-		display: block;
-	}
-}
-
 .home-equipments-wrapper { 
 	padding: 70px 0;
 
@@ -131,11 +123,19 @@
 	padding-right: 15px;
 }
 
-.darkPattern {
+.home-dark-pattern,.home-bright-pattern {
+	width: 100%;
+
+	img {
+		display: block;
+	}
+}
+
+.home-dark-pattern {
 	transform:translateY(-1px);
 }
 
-.brightPattern {
+.home-bright-pattern {
 	transform:translateY(1px);
 }
 

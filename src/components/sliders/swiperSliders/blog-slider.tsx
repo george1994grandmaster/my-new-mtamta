@@ -2,10 +2,10 @@ import { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-import NavigationLink from '../link';
-import { blogMediaSlides } from '../../utils/data';
+import NavigationLink from '../../link';
+import { blogMediaSlides } from '../../../utils/data';
 import "swiper/css/navigation";
-import successArrow from '../../assets/img/successArrow.svg';
+import successArrow from '../../../assets/img/successArrow.svg';
 
 
 SwiperCore.use([Navigation]);

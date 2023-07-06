@@ -1,16 +1,16 @@
 
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import Slider from "../components/slider";
+import Slider from "../components/sliders/slider";
 import {gears} from "../utils/data";
 import guidePromo from "../assets/img/guidePromo.png";
 import darkPattern from "../assets/img/darkPattern.svg";
 import starComplete from "../assets/img/starComplete.svg";
 import blogMedia from "../assets/img/blogMedia.svg";
 import brightPattern from "../assets/img/brightPattern.svg";
-import {CompleteTextNavigate} from "../assets/svgFormatComponents";
+import {CompleteTextNavigate} from "../assets/svg-format-components";
 import {mainBecomeBlocks} from "../utils/data";
-import BecomeGuideBanner from "../components/scrollTriggerAnimation/becomeGuide"
+import BecomeGuideBanner from "../components/scroll-trigger-animation.tsx/becomeGuide"
 
 
 const Home:FC = () => {
@@ -85,24 +85,24 @@ const Home:FC = () => {
           </div>
         </div>
       </div>
-      <div className="darkPattern">
+      <div className="home-dark-pattern">
         <img src={darkPattern} alt="darkPattern"/>
       </div>
       <div className="home-equipments-wrapper">
-			<div className="container">
-				<div className="equipments-content">
-					<h3 className="equipments-title title">NECESSARY EQUIPMENTS</h3>
-					<div className="equipments-logo-content">
-						{gears.map((gear, index) => (
-							<div key={index} className="equipments-logo">
-								<img src={gear.image} alt="equipments-img" />
-							</div>
-							))}
-					</div>
-				</div>
-			</div>
-		</div>
-      <div className="brightPattern">
+        <div className="container">
+          <div className="equipments-content">
+            <h3 className="equipments-title title">NECESSARY EQUIPMENTS</h3>
+            <div className="equipments-logo-content">
+              {gears.map((gear, index) => (
+                <div key={index} className="equipments-logo">
+                  <img src={gear.image} alt="equipments-img" />
+                </div>
+                ))}
+            </div>
+          </div>
+        </div>
+		  </div>
+      <div className="home-bright-pattern">
         <img src={brightPattern} alt="brightPattern"/>
       </div>
       <div className="bright-wrapper" style={{paddingTop: "30px"}}>

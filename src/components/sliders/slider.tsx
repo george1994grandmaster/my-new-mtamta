@@ -1,7 +1,8 @@
-import React, { FC, useRef } from 'react';
-import HomeBannerSlider from './swiperSliders/homeSlider';
-import BlogSlider from './swiperSliders/blogSlider';
-import StorySlider from './swiperSliders/storySlider';
+import { FC, useRef } from 'react';
+import HomeBannerSlider from './swiperSliders/home-slider';
+import BlogSlider from './swiperSliders/blog-slider';
+import StorySlider from './swiperSliders/story-slider';
+import CoursesSlider from './swiperSliders/courses-slider';
 import SwiperCore from 'swiper';
 
 interface SliderProps {
@@ -35,6 +36,10 @@ const Slider: FC<SliderProps> = ({ sliderName }) => {
     case 'StorySlider':
       return (
         <StorySlider handlePrevClick={handlePrevClick} handleNextClick={handleNextClick} />
+      );
+    case 'coursesSlider':
+      return (
+        <CoursesSlider handlePrevClick={handlePrevClick} handleNextClick={handleNextClick} />
       );
     default:
       return (

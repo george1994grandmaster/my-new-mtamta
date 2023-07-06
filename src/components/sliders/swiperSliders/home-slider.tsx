@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { EffectFade, Navigation } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-import { homeSliderBannerimages } from '../../utils/data';
+import { homeSliderBannerimages } from '../../../utils/data';
 import "swiper/css/navigation";
-import bannerArrowSvg from '../../assets/img/bannerArrow.svg';
+import bannerArrowSvg from '../../../assets/img/bannerArrow.svg';
 
 SwiperCore.use([EffectFade, Navigation]);
 

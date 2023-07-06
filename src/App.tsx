@@ -5,6 +5,7 @@ import ScrollToTop from './components/restart';
 import Home from './pages/home';
 import Story from './pages/story';
 import Marathon from './pages/marathon';
+import BecomeGuide from './pages/become-guide';
 
 const App: FC = () => {
   return (
@@ -16,6 +17,8 @@ const App: FC = () => {
               <Route index element={<Home />} />
               <Route path="story" element={<Story />} />
               <Route path="guide-marathon" element={<Marathon />} />
+              <Route path="guide-marathon" element={<Marathon />} />
+              <Route path="become-guide" element={<BecomeGuide />} />
             </Route>
           </Routes>
         </ScrollToTop>

@@ -2,8 +2,8 @@ import { FC, useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Parallax, Navigation } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-import { mountainSlider } from '../../utils/data';
-import successArrow from '../../assets/img/successArrow.svg';
+import { mountainSlider } from '../../../utils/data';
+import successArrow from '../../../assets/img/successArrow.svg';
 
 SwiperCore.use([ Navigation]);
 
