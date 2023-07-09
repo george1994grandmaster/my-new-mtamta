@@ -1,4 +1,3 @@
-
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "../components/sliders/slider";
@@ -31,8 +30,8 @@ const Home:FC = () => {
                 <img src={guidePromo} alt="guide-promo-img"/>
               </div>
               <div className="text-layout-col guide-promo-text-content">
-                <h2 className="title guide-promo-title">2023 Mountain Guide Adventures</h2>
-                <p className="guide-promo-text text">
+                <h2 className="title layout-title light">2023 Mountain Guide Adventures</h2>
+                <p className="layout-text light fw-light text">
                   Sure! Here's a shorter version of the guide-info-content for your home page:
                   "2023 Mountain Guide Adventures: Unleash the thrill of the mountains with our expert guides!
                   Embark on an epic mountain journey in 2023. Our experienced guides will lead you through awe-inspiring landscapes, from the majestic Himalayas to the rugged Andes and the enchanting European Alps.
@@ -106,7 +105,7 @@ const Home:FC = () => {
         <img src={brightPattern} alt="brightPattern"/>
       </div>
       <div className="bright-wrapper" style={{paddingTop: "30px"}}>
-        <div className="horizonatal-border"></div>
+        <div className="horizontal-border"></div>
         <div className="left-vertical-border border-cut"></div>
         <div className="right-vertical-border border-cut"></div>
         <div className="container">
@@ -118,7 +117,7 @@ const Home:FC = () => {
               <img src={starComplete} alt="homeStarImg"/>
             </div>
           </div>
-          <div className="horizonatal-border"></div>
+          <div className="horizontal-border"></div>
           <div className="vertical-large-spacing">
             <Slider sliderName={'blogSlider'}/>
           </div>

@@ -3,7 +3,7 @@ import mountainLogo from "../assets/img/mountainLogo.png";
 import {marathonTitles} from "../utils/data";
 import guideAdvantures from "../assets/img/guideAdvantures.png";
 import darkPattern from "../assets/img/darkPattern2.svg";
-import formStar from "../assets/img/formStar.svg";
+import lightStar from "../assets/img/lightStar.svg";
 import starComplete from "../assets/img/starComplete.svg";
 import Form from "../components/forms/form";
 import AccordionComponent from "../components/accordion";
@@ -13,7 +13,7 @@ const Marathon: FC = () => {
   
   return (
     <>
-      <div className="marathon-banner-wrapper">
+      <div className="main-banner-wrapper ai-center p-fixed l-0">
         <div className="container">
           <div className="marathon-banner-content">
             <div className="marathon-logo-content">
@@ -38,11 +38,11 @@ const Marathon: FC = () => {
             <div className="container">
               <div className="text-image-layout">
                 <div className="image-layout-col">
-                  <img src={guideAdvantures} alt="guide-promo-img"/>
+                  <img src={guideAdvantures} alt="guide-img"/>
                 </div>
-                <div className="text-layout-col guide-promo-text-content">
-                  <h2 className="title guide-promo-title">2023 Mountain Guide Adventures</h2>
-                  <p className="guide-promo-text text">
+                <div className="text-layout-col text-left-spacing">
+                  <h2 className="layout-title light title">2023 Mountain Guide Adventures</h2>
+                  <p className="layout-text light fw-middle text">
                     A guide marathon is an exhilarating outdoor event that brings together
                     seasoned guides and enthusiastic adventurers for an immersive experience
                     in nature. Participants embark on a physically demanding journey, following
@@ -69,21 +69,23 @@ const Marathon: FC = () => {
               reconnect with your true self, fostering a sense of inner peace and rejuvenation.
             </p>
           </div>
-          <div className="register-overlay-container">
-            <div className="bright-border-overlay">
-              <div className="dark-border-overlay">
-                <div className="register-form-container">
-                  <div className="left-middle-star p-absolute">
-                    <img src={formStar} alt="star-img"/>
+          <div className="main-form-spacing">
+            <div className="register-form-wrapper overall-form-wrapper">
+              <div className="bright-border-overlay">
+                <div className="dark-border-overlay">
+                  <div className="register-form-content bg-light">
+                    <div className="left-middle-star p-absolute">
+                      <img src={lightStar} alt="star-img"/>
+                    </div>
+                    <div className="right-bottom-star p-absolute">
+                      <img src={lightStar} alt="star-img"/>
+                    </div>
+                    <div className="right-top-star p-absolute">
+                      <img src={lightStar} alt="star-img"/>
+                    </div>
+                    <h3 className="register-form-title dark">Register & Apply</h3>
+                    <Form formType="registerForm" /> 
                   </div>
-                  <div className="right-bottom-star p-absolute">
-                    <img src={formStar} alt="star-img"/>
-                  </div>
-                  <div className="right-top-star p-absolute">
-                    <img src={formStar} alt="star-img"/>
-                  </div>
-                  <h3 className="register-form-title dark">Register & Apply</h3>
-                  <Form formType="registerForm"/> 
                 </div>
               </div>
             </div>

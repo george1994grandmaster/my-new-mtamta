@@ -30,6 +30,8 @@ import news9 from '../assets/img/news9.png';
 import news10 from '../assets/img/news10.png';
 import news11 from '../assets/img/news11.png';
 import news12 from '../assets/img/news12.png';
+import certificateLayout1 from '../assets/img/certificateLayout1.png';
+import certificateLayout2 from '../assets/img/certificateLayout2.png';
 
 
 interface headerDatas {
@@ -432,35 +434,59 @@ export const courseSlides: coursesSlideData[] = [
   {
     id: 1,
     image: news12,
-    text: "If you seek adventure on the mountain, climbing on cliffs, thrilling serials, and mingling with skiers, then the two-year diploma program for high-level international qualification in tourism is perfect for you. This physically demanding program offers an adrenaline-filled income that will take your career to new heights. Based on your learning outcomes, you can plan any type of adventure and desire, be it alpinism, free ride, or heli-ski tours. Accommodate guests in travel throughout all seasons of the year. Evaluate the relief and weather conditions, identify avalanche-prone areas, determine safe routes for departure and descent, and conduct rescue operations if necessary.",
+    text: "If you seek adventure on the mountain, climbing on cliffs, thrilling serials, and mingling with skiers, then the two-year diploma program for high-level international qualification in tourism is perfect for you. This physically demanding program offers an adrenaline-filled income that will take your career to new heights.",
     title: "Mountain Guide"
   },
 
   {
     id: 2,
     image: news12,
-    text: "If you feel that the transition from a joyful life to a professional career is the right time, then the 8-week, multi-faceted program tailored specifically for you is waiting. The course is mainly focused on theoretical and practical training in high-level tourism. During the program, you will acquire skills in orientation and navigation, assessment of weather changes with natural indicators, knowledge of safety and rescue, risk management, and other important aspects. You will learn proper and effective communication with tourists and principles of crisis management. Upon completion of the course, you will be able to assess different landscapes and climatic zones, where trekking outside the alpine environment by foot is possible and glacier travel is required.",
+    text: "If you feel that the transition from a joyful life to a professional career is the right time, then the 8-week, multi-faceted program tailored specifically for you is waiting. The course is mainly focused on theoretical and practical training in high-level tourism. During the program, you will acquire skills in orientation and navigation, assessment of weather changes with natural indicators, knowledge of safety and rescue, risk management, and other important aspects.",
     title: "Trekking Guide"
   },
 
   {
     id: 3,
     image: news12,
-    text: "If you also have a passion for winter mountains, whether it's skiing or snowboarding, and you want to improve your performance based on the results achieved through competition or freeriding, then the 1-year program for snowboarders is perfect for you. In this program, you will learn various freeride techniques, mastering snowboarding skills, understanding avalanche safety, and other risks. The program not only focuses on correctly planning and executing safe tours but also includes mountain operations professionally. The course is designed for snowboarders/freeriders who wish to obtain internationally recognized knowledge and become certified professionals in the field of safety. Upon successful completion of the program, you will be able to accurately plan and execute not only touristic routes but also perform professionally in avalanche operations",
+    text: "If you also have a passion for winter mountains, whether it's skiing or snowboarding, and you want to improve your performance based on the results achieved through competition or freeriding, then the 1-year program for snowboarders is perfect for you. In this program, you will learn various freeride techniques, mastering snowboarding skills, understanding avalanche safety, and other risks.",
     title: "SKI GUIDE"
   },
 
   {
     id: 4,
     image: news12,
-    text: "A 6-week intensive professional program for cycling enthusiasts has been developed to facilitate eco-friendly travel using various types of bicycles. The program covers different routes, including mountain trails, roads, auditoriums, and velodromes. During the course, along with multiple practical exercises, you will learn about general cycling routes, off-road navigation, effective communication with tourists, risk management, and technical support for cycling expeditions. Upon completion of the program, you will be able to plan and conduct safe, comfortable, and exciting cycling tours. The course is designed for experienced cyclists with different levels of physical fitness who are interested in starting or enhancing their professional career and contributing to the development of cycling",
+    text: "A 6-week intensive professional program for cycling enthusiasts has been developed to facilitate eco-friendly travel using various types of bicycles. The program covers different routes, including mountain trails, roads, auditoriums, and velodromes.",
     title: "BIKE TOUR GUIDE"
   },
 
   {
     id: 5,
     image: news12,
-    text: "Domestic tourism is gaining popularity, and travelers expect services that meet international standards. To address this demand, we have created an intensive 10-week professional program focused on domestic tourism activities. The first part of the program revolves around understanding animals: their physiological and psychological characteristics, behavior, and handling in different situations. You will learn how to communicate with animals and interpret their body language. The second part of the program is dedicated to practical skills in the field of tourism: customer orientation, guiding techniques, route planning, and risk management. Upon completion of the course, you will be equipped to handle various types and durations of domestic tours and expeditions.",
+    text: "Domestic tourism is gaining popularity, and travelers expect services that meet international standards. To address this demand, we have created an intensive 10-week professional program focused on domestic tourism activities. The first part of the program revolves around understanding animals: their physiological and psychological characteristics, behavior, and handling in different situations.",
     title: "Equestrian Tour Guide"
   }
 ]
+
+interface certificate {
+  id: number;
+  image: string;
+  text: string;
+}
+
+
+export const certificate: certificate[] = [
+  {
+    id: 1,
+    image: certificateLayout1,
+    text: 'Because it’s a dream job, and we won’t be modest about it. It is simply one of the most exciting, rewarding and interesting jobs out there. As a guide you will be traveling in the breathtaking nature, meeting new people from across the globe, leading them through stunning sights & awe-inspiring experiences, sharing the best of your country… and you will be very well paid for it. What could be better? You will be the cocreator of the happiest holidays of your guests, making sure they leave with unforgettable memories longing to return for more. Now speaking of practical issues - a career in adventure tourism means becoming a key player in one of the fastest growing industries & becoming a certified adventure guide in Georgia means that you will be a sought-after professional working for the leading local and international companies, and that’s not even all. Most of the time you will be a freelancer, managing your own yearly schedule, you will have an ever-growing network of like-minded people and partners, where the opportunities for self-employment, further professional development and entrepreneurship are immense'
+  },
+
+  {
+    id: 2,
+    image: certificateLayout2,
+    text: 'As in any profession, having a strong desire, motivation, and dedication is essential. If we add to this the qualification that corresponds to international standards, then success becomes inevitable. The knowledge acquired in the "School of Sustainable Tourism" will help you professionally, enabling you to acquire necessary skills, make friends, and become a member of the global professional network. Your new qualification will make you a highly sought-after employee in both local and international tourist companies.'
+  }
+]
+
+
+

@@ -1,0 +1,110 @@
+ .main-banner-title {
+  font-size: 80px;
+  text-align: center;
+  animation: fadeTitle 1s ease-in-out;
+}
+
+.certificate-top-star, .certificate-bottom-star {
+  width: 220px;
+}
+
+.certificate-top-star {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.certificate-bottom-star {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+
+@keyframes fadeTitle {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.question-title {
+  font-size: 70px;
+}
+
+.question-star {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 200px;
+}
+
+.certificate-text-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.certificate-text-content {
+  position: relative;
+  padding: 70px;
+  border-radius: 35px;
+}
+
+.certificate-border-overlay {
+  border: 20px solid #003642;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #003642 70px, transparent 70px, transparent), linear-gradient(180deg, #003642 70px, transparent 70px, transparent), linear-gradient(270deg, #003642 70px, transparent 70px, transparent), linear-gradient(360deg, #003642 70px, transparent 70px, transparent);
+}
+
+.adventure-certificate-title {
+  margin-bottom: 30px;
+  font-size: calc(16px + 1vw);
+  text-align: center;
+}
+
+.adventure-certificate-text {
+  font-size: calc(14px + 0.1vw);
+}
+
+.certificate-text-top-star {
+  top: 20px;
+  right: -60px;
+  width: 100px;
+  
+}
+
+.certificate-text-bottom-star {
+  bottom: 20px;
+  left: -60px;
+  width: 100px;
+}
+
+.certificate-title {
+  margin-bottom: 50px;
+  font-size: calc(30px + 1vw);
+  letter-spacing: 1px;
+}
+
+.certificate-text {
+ font-size: calc(15px + 0.2vw);
+ line-height: 1.4;
+}
+
+.certificate-banner-img {
+  padding: 50px 0 150px 0;
+
+  img {
+    height: 30vw;
+  }
+}
+
+.certificate-title-star {
+  top: 20px;
+  right: 0;
+  width: 170px;
+}
+
+
+
+

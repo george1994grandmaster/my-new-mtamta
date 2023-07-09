@@ -11,7 +11,7 @@ const Form: FC<formProps> = ({ formType }) => {
   switch (formType) {
     case 'registerForm':
       return (
-        <Register backgroundColor="form-light-content"/>
+        <Register/>
       );
     default:
       return (

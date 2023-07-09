@@ -20,15 +20,16 @@
             linear-gradient(360deg, $dark 70px, transparent 70px, transparent),
 }
 
+.main-form-spacing {
+  padding: 100px 0 150px 0;
+}
 
-
-.register-overlay-container {
+.register-form-wrapper {
   display: flex;
   position: relative;
   width: 50%;
   margin: 0 auto;
-  padding: 100px 0 150px 0;
-
+  
   .right-top-star {
     bottom: 80%;
     right: -40px;
@@ -51,6 +52,17 @@
   }
 }
 
+.overall-form-wrapper {
+
+  button {
+    background-color: $dark;
+
+    &:hover {
+      background-color: $bright;
+    }
+  }
+}
+
 form {
   .MuiButton-root {
     padding: 6px 20px;
@@ -63,17 +75,16 @@ form {
   }
 }
 
-.register-form-container {
+.register-form-content {
   position: relative;
   padding: 40px 70px;
   border-radius: 35px;
-  background-color: $light;
-  
-  & .form-light-content {
+}
 
-    .MuiInputBase-root {
-      border-bottom: 1px solid $dark;
-    }
+.overall-form-wrapper {
+
+  .MuiInputBase-root {
+    border-bottom: 1px solid $dark;
   }
 }
 

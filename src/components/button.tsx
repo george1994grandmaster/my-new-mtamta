@@ -4,8 +4,8 @@ import Typography from '@mui/material/Typography';
 
 interface BtnProps {
   text: string;
-  bgColor: string;
-  hoverBgColor: string;
+  //bgColor: string;
+  //hoverBgColor: string;
   color: string;
   space: string;
   handleClick?: () => void; //MouseEventHandler<HTMLButtonElement>;
@@ -15,10 +15,10 @@ const Btn: FC<BtnProps> = ({ text, handleClick, ...props }) => {
   const buttonStyles = {
     padding: props.space,
     color: props.color,
-    backgroundColor: props.bgColor,
-    '&:hover': {
-      backgroundColor: props.hoverBgColor,
-    },
+    //backgroundColor: props.bgColor,
+    //'&:hover': {
+      //backgroundColor: props.hoverBgColor,
+    //},
   };
 
   return (

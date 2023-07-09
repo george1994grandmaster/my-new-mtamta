@@ -5,6 +5,7 @@
 @import './home';
 @import './story';
 @import './marathon';
+@import './become-guide';
 @import './slider';
 @import './form';
 
@@ -95,6 +96,34 @@ img {
   flex-wrap: wrap;
 }
 
+.vertical-large-spacing {
+	padding: 100px 0;
+}
+
+.vertical-middle-spacing{
+  padding: 70px 0;
+}
+
+.vertical-middle-spacing{
+  padding: 70px 0;
+}
+
+.vertical-small-spacing {
+  padding: 35px 0;
+}
+
+.text-content-spacing {
+	padding: 0 80px;
+}
+
+.text-right-spacing {
+  padding-right: 70px;
+}
+
+.text-left-spacing {
+  padding-left: 70px;
+}
+
 .MuiInputBase-root {
   width: 100%;
   
@@ -104,6 +133,15 @@ img {
     font-weight: bold;
   }
 }
+
+.main-banner-wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-color: $bright;
+  overflow: hidden;
+}
+  
 
 .dark-wrapper {
   position: relative;
@@ -165,7 +203,7 @@ img {
 }
 
 .layout-text, .date {
-  font-size: calc(13px + 0.1vw);
+  font-size: calc(14px + 0.1vw);
 }
 
 .layout-text {
@@ -193,7 +231,7 @@ img {
   right: 70px;
 }
 
-.horizonatal-border {
+.horizontal-border {
   width: 100%;
   height: 1px;
   background-color: lightGrey;

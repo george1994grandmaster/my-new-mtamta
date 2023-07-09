@@ -39,11 +39,9 @@ const Cards: FC = () => {
               <h5 className="card-title title dark fw-bold">{card.title}</h5>
               <p className="card-text text dark fw-light">{card.text}</p>
               <Btn
-                bgColor="#003642"
                 color="#fff"
                 text="read more"
                 space="8px 15px"
-                hoverBgColor="#F05E47"
                 handleClick={() => openPopup(card)}
               />
             </div>
