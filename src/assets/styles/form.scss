@@ -54,6 +54,10 @@
 
 .overall-form-wrapper {
 
+  .MuiInputBase-root {
+    border-bottom: 1px solid $dark;
+  }
+
   button {
     background-color: $dark;
 
@@ -63,7 +67,9 @@
   }
 }
 
+
 form {
+
   .MuiButton-root {
     padding: 6px 20px;
     font-size: calc(12px + 0.1vw);
@@ -81,12 +87,7 @@ form {
   border-radius: 35px;
 }
 
-.overall-form-wrapper {
 
-  .MuiInputBase-root {
-    border-bottom: 1px solid $dark;
-  }
-}
 
 .register-form-title {
   margin-bottom: 30px;

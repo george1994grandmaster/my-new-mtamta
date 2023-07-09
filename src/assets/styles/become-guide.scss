@@ -106,5 +106,99 @@
 }
 
 
+.certificate-swiper {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    width: auto;
+    padding: 15px;
+    transition: all 0.4s ease; 
+    
+    &:hover {
+      transform: scale(1.05);
+      border-radius: 50px;
+    }
+  }
+  
+  .swiper-button-next {
+    top: 90%;
+    right: 80px;
+
+    &:hover {
+      background-color: $bright;
+
+      p {
+        color: $light;
+      }
+
+      svg {
+
+        path {
+          fill: $light;
+          stroke: $light;
+        }
+      }
+    }
+    
+    p {
+      margin-right: 10px;
+      color: #F05E47;
+      font-size: calc(14px + 0.2vw);
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+    }
+
+    svg {
+      width: 20px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .swiper-button-prev {
+    flex-direction: row-reverse;
+    top: 90%;
+    left: 80px;
+
+    &:hover {
+      background-color: $light;
+
+      p {
+        color: $bright;
+      }
+
+      svg {
+       
+      path {
+          fill: $bright;
+          stroke: $bright;
+        }
+      }
+    }
+   
+    p {
+      color: #F05E47;
+      font-size: calc(14px + 0.2vw);
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+    }
+
+    svg {
+      width: 20px;
+      margin-right: 10px;
+    }
+    
+    p {
+      color: #fff;
+    }
+  }
+}
+
+
+
+
 
 

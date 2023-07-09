@@ -240,9 +240,14 @@
   overflow: hidden;
 
   button {
+    background-color: $dark;
     font-size: calc(14px + 0.1vw);
     font-family: "Montserrat", sans-serif;
     animation: pulsate 1.5s infinite;
+
+    &:hover {
+      background-color: $bright; 
+    }
   }
 }
 
