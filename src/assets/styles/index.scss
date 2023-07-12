@@ -5,10 +5,10 @@
 @import './home';
 @import './story';
 @import './marathon';
+@import './blog-media.scss';
 @import './become-guide';
 @import './slider';
 @import './form';
-
 
 body {
   position: relative;
@@ -207,7 +207,7 @@ img {
 }
 
 .layout-text {
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .left-vertical-border, .right-vertical-border {

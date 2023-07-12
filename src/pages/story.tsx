@@ -1,7 +1,7 @@
 import {FC} from "react";
 import Slider from "../components/sliders/slider";
-import StoryTitle from "../components/scroll-trigger-animation.tsx/storyTitle";
-import MissionPartners from "../components/scroll-trigger-animation.tsx/missionPartners";
+import StoryTitle from "../components/scroll-trigger-animation/storyTitle";
+import MissionPartners from "../components/scroll-trigger-animation/missionPartners";
 
 const Story:FC = () => {
   return (

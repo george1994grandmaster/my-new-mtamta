@@ -39,11 +39,11 @@ interface headerDatas {
   label: string;
 }
 
-export  const headerLinksData: headerDatas[] = [
+export  const navbarLinksData: headerDatas[] = [
   { path: '/story', label: 'OUR STORY' },
   { path: '/guide-marathon', label: 'GUIDE MARATHON' },
   { path: '/become-guide', label: 'BECOME A GUIDE' },
-  { path: '/media', label: 'MEDIA' },
+  { path: '/blog-media', label: 'MEDIA' },
   { path: '/get-in-touch', label: 'GET IN TOUCH' },
 ];
 
@@ -478,7 +478,7 @@ export const certificate: certificate[] = [
   {
     id: 1,
     image: certificateLayout1,
-    text: 'Because it’s a dream job, and we won’t be modest about it. It is simply one of the most exciting, rewarding and interesting jobs out there. As a guide you will be traveling in the breathtaking nature, meeting new people from across the globe, leading them through stunning sights & awe-inspiring experiences, sharing the best of your country… and you will be very well paid for it. What could be better? You will be the cocreator of the happiest holidays of your guests, making sure they leave with unforgettable memories longing to return for more. Now speaking of practical issues - a career in adventure tourism means becoming a key player in one of the fastest growing industries & becoming a certified adventure guide in Georgia means that you will be a sought-after professional working for the leading local and international companies, and that’s not even all. Most of the time you will be a freelancer, managing your own yearly schedule, you will have an ever-growing network of like-minded people and partners, where the opportunities for self-employment, further professional development and entrepreneurship are immense'
+    text: 'Because it’s a dream job, and we won’t be modest about it. It is simply one of the most exciting, rewarding and interesting jobs out there. As a guide you will be traveling in the breathtaking nature, meeting new people from across the globe, leading them through stunning sights & awe-inspiring experiences, sharing the best of your country… and you will be very well paid for it. What could be better? You will be the cocreator of the happiest holidays of your guests, making sure they leave with unforgettable memories longing to return for more. '
   },
 
   {

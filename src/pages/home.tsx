@@ -9,7 +9,7 @@ import blogMedia from "../assets/img/blogMedia.svg";
 import brightPattern from "../assets/img/brightPattern.svg";
 import {CompleteTextNavigate} from "../assets/svg-format-components";
 import {mainBecomeBlocks} from "../utils/data";
-import BecomeGuideBanner from "../components/scroll-trigger-animation.tsx/becomeGuide"
+import BecomeGuideBanner from "../components/scroll-trigger-animation/becomeGuide"
 
 
 const Home:FC = () => {

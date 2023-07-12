@@ -21,7 +21,6 @@ const NavigationLink: FC<NavigationLinkProps> = ({ url, text, ...props }) => {
     color: isHovered ? props.hoveredColor : props.color,
     backgroundColor: isHovered ? props.hoveredBackground : props.bgColor,
     textDecoration: "none",
-    fontSize: "calc(14px + 0.1vw)",
     transition: "all 0.3s ease-in-out",
   };
 

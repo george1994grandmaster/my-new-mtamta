@@ -67,6 +67,12 @@
   }
 }
 
+.info-border-form {
+  border: 15px solid $bright;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #003642 70px, transparent 70px, transparent), linear-gradient(180deg, #003642 70px, transparent 70px, transparent), linear-gradient(270deg, #003642 70px, transparent 70px, transparent), linear-gradient(360deg, #003642 70px, transparent 70px, transparent);
+}
+
 
 form {
 

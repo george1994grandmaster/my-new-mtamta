@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import { FC } from 'react';
 import { Card } from './cards';
 import { CloseBtn } from '../assets/svg-format-components';
 
@@ -25,8 +25,8 @@ const Popup: FC<PopupProps> = ({ condition, selectedCard, onClose }) => {
               <img src={selectedCard.image} alt="popup-img" />
             </div>
             <div className="popup-text-col">
-              <h5 className="popup-title title fw-bold">{selectedCard.title}</h5>
-              <p className="popup-text text fw-light">{selectedCard.completeText}</p>
+              <h5 className="popup-title title dark fw-bold">{selectedCard.title}</h5>
+              <p className="popup-text text dark fw-light">{selectedCard.completeText}</p>
             </div>
           </div>
         )}

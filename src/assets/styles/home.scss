@@ -116,11 +116,11 @@
 }
 
 .home-dark-pattern {
-	transform:translateY(-1px);
+	transform: translateY(-1px);
 }
 
 .home-bright-pattern {
-	transform:translateY(1px);
+	transform: translateY(1px);
 }
 
 .blogMedia-banner-block {
@@ -160,6 +160,11 @@
 	.become-guide-right {
 		justify-content: flex-end;
 		background-color: $bright;
+	}
+
+	.blog-swiper a {
+		font-size: calc(14px + 0.1vw);
+		font-weight: 500;
 	}
 		
 	

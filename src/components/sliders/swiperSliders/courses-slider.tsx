@@ -73,7 +73,7 @@ const CoursesSlider: FC<BlogSliderProps> = ({ handlePrevClick, handleNextClick }
               </SwiperSlide>
               <SwiperSlide>
                 <div className="register-form-wrapper overall-form-wrapper">
-                  <div className="bright-border-overlay">
+                  <div className="info-border-form">
                     <div className="register-form-content bg-light">
                       <div className="left-middle-star p-absolute">
                         <img src={lightStar} alt="star-img"/>
@@ -95,7 +95,7 @@ const CoursesSlider: FC<BlogSliderProps> = ({ handlePrevClick, handleNextClick }
             <div>
               <SwiperSlide>
                 <div className="register-form-wrapper overall-form-wrapper">
-                  <div className="bright-border-overlay">
+                  <div className="info-border-form">
                     <div className="register-form-content bg-light">
                       <div className="left-middle-star p-absolute">
                         <img src={lightStar} alt="star-img"/>

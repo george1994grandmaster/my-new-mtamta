@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Story from './pages/story';
 import Marathon from './pages/marathon';
 import BecomeGuide from './pages/become-guide';
+import BlogMedia from './pages/blog-media';
 
 const App: FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: FC = () => {
               <Route path="guide-marathon" element={<Marathon />} />
               <Route path="guide-marathon" element={<Marathon />} />
               <Route path="become-guide" element={<BecomeGuide />} />
+              <Route path="blog-media" element={<BlogMedia />} />
             </Route>
           </Routes>
         </ScrollToTop>
