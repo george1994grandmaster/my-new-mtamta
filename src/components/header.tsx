@@ -16,6 +16,7 @@ const Header: FC = () => {
     switch (location.pathname) {
       case '/':
       case '/story':
+      case '/gallery':
         return '#003642';
       case '/guide-marathon':
       case '/become-guide':

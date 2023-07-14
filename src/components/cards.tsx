@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import { FC, useState } from 'react';
 import { newsCards } from '../utils/data';
 import Btn from './button';
 import Popup from './popup';

@@ -44,6 +44,7 @@ export  const navbarLinksData: headerDatas[] = [
   { path: '/guide-marathon', label: 'GUIDE MARATHON' },
   { path: '/become-guide', label: 'BECOME A GUIDE' },
   { path: '/blog-media', label: 'MEDIA' },
+  { path: '/gallery', label: 'GALLERY' },
   { path: '/get-in-touch', label: 'GET IN TOUCH' },
 ];
 
@@ -149,34 +150,25 @@ export const blogMediaSlides: slide[] = [
   },
 ];
 
-interface overlayText {
+interface overlayTextItems {
   id: number;
   optionClass: string;
   title: string;
   text: string;
 }
 
-export const overlayText: overlayText[] = [
+export const overlayText: overlayTextItems[] = [
   {
     id: 1,
     optionClass: "mission-block",
     title: "OUR MISSION",
-    text:  "our mission is to provide exceptional mountain guiding services and unforgettable experiences for adventurers of all levels. We are dedicated to ensuring the safety, enjoyment, and growth of our clients as they explore the wonders of the mountains\
-      Through our expert guidance, we aim to inspire a love for the outdoors, instill confidence in climbers, and help them achieve their mountain goals. With a strong emphasis on professionalism, knowledge, and personalized attention, we create tailored experiences that cater to individual aspirations and abilities.\
-      We prioritize safety above all else, adhering to strict industry standards and utilizing the latest techniques and equipment. Our experienced guides are well-versed in mountain terrain, weather conditions, and rescue procedures, ensuring a secure and worry-free adventure for our clients.\
-      Whether you're a novice looking to take your first steps in the mountains or an experienced climber seeking new challenges, we are here to guide you every step of the way. Join us at [Your Mountain Guide Name] and let's embark on unforgettable mountain adventures together"
+    text:  "our mission is to provide exceptional mountain guiding services and unforgettable experiences for adventurers of all levels. We are dedicated to ensuring the safety, enjoyment, and growth of our clients as they explore the wonders of the mountains Through our expert guidance, we aim to inspire a love for the outdoors, instill confidence in climbers, and help them achieve their mountain goals. With a strong emphasis on professionalism, knowledge, and personalized attention, we create tailored experiences that cater to individual aspirations and abilities. We prioritize safety above all else, adhering to strict industry standards and utilizing the latest techniques and equipment. Our experienced guides are well-versed in mountain terrain, weather conditions, and rescue procedures, ensuring a secure and worry-free adventure for our clients. Whether you're a novice looking to take your first steps in the mountains or an experienced climber seeking new challenges, we are here to guide you every step of the way. Join us at [Your Mountain Guide Name] and let's embark on unforgettable mountain adventures together"
   },
   {
     id: 2,
     optionClass: "partners-block",
     title: "MAIN PARTNERS",
-    text: "We are proud to collaborate with esteemed partners who share our passion for mountain exploration and outdoor experiences. These partnerships enhance our services and provide exceptional opportunities for unforgettable mountain adventures.\
-        Our longstanding partnership provides top-of-the-line equipment and gear, ensuring safety and performance in the mountains.\
-        Adventure Travel Agency: Our collaboration ensures seamless travel arrangements and logistics, allowing clients to focus on their adventure.\
-        Environmental Conservation Foundation: Our partnership contributes to environmental conservation efforts and raises awareness about preserving the fragile mountain ecosystems.\
-        Mountain Rescue Team: Our collaboration prioritizes client safety with preparedness and emergency response capabilities.\
-        Local Guides Association: We connect clients with experienced guides who offer unique insights into the local culture, history, and natural wonders.\
-        Together, we create extraordinary mountain experiences while supporting local communities and protecting the mountains' pristine environments."
+    text: "We are proud to collaborate with esteemed partners who share our passion for mountain exploration and outdoor experiences. These partnerships enhance our services and provide exceptional opportunities for unforgettable mountain adventures. Our longstanding partnership provides top-of-the-line equipment and gear, ensuring safety and performance in the mountains. Adventure Travel Agency: Our collaboration ensures seamless travel arrangements and logistics, allowing clients to focus on their adventure. Environmental Conservation Foundation: Our partnership contributes to environmental conservation efforts and raises awareness about preserving the fragile mountain ecosystems. Mountain Rescue Team: Our collaboration prioritizes client safety with preparedness and emergency response capabilities. Local Guides Association: We connect clients with experienced guides who offer unique insights into the local culture, history, and natural wonders. Together, we create extraordinary mountain experiences while supporting local communities and protecting the mountains' pristine environments."
   },
 ];
 
@@ -316,7 +308,7 @@ export const accordionMainTitle: accordTitle[] = [
   },
 ]
 
-interface newsCards {
+interface newsCardsItems {
   id: number;
   image: string;
   title: string;
@@ -324,7 +316,7 @@ interface newsCards {
   completeText: string;
 }
 
-export const newsCards: newsCards[] = [
+export const newsCards: newsCardsItems[] = [
   {
     id: 1,
     image: news1,
@@ -467,14 +459,14 @@ export const courseSlides: coursesSlideData[] = [
   }
 ]
 
-interface certificate {
+interface certificateItems {
   id: number;
   image: string;
   text: string;
 }
 
 
-export const certificate: certificate[] = [
+export const certificate: certificateItems[] = [
   {
     id: 1,
     image: certificateLayout1,

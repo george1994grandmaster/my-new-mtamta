@@ -1,0 +1,22 @@
+.gallery {
+  column-count: 3;
+}
+
+.lg-container {
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+}
+
+picture  {
+
+  img {
+    height: 100% !important;
+  }
+  
+}
+
+.lg-sub-html {
+  display: none;
+}
+

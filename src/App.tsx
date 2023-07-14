@@ -7,6 +7,7 @@ import Story from './pages/story';
 import Marathon from './pages/marathon';
 import BecomeGuide from './pages/become-guide';
 import BlogMedia from './pages/blog-media';
+import Gallery from './pages/gallery';
 
 const App: FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: FC = () => {
               <Route path="guide-marathon" element={<Marathon />} />
               <Route path="become-guide" element={<BecomeGuide />} />
               <Route path="blog-media" element={<BlogMedia />} />
+              <Route path="gallery" element={<Gallery />} />
             </Route>
           </Routes>
         </ScrollToTop>
