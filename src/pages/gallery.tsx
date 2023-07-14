@@ -10,14 +10,10 @@ import blog2 from "../assets/img/blog2.png";
 import blog3 from "../assets/img/blog3.png";
 
 const Gallery: FC = () => {
-  const galleryRef = useRef<any>(null);
-  const [allowInteraction, setAllowInteraction] = useState(false);
-
-  
+ 
   return (
     <div className="Gallery">
       <LightGallery
-        //ref={galleryRef}
         plugins={[lgZoom]}
         speed={500}
         startClass="custom-start-class"
