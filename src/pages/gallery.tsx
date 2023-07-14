@@ -25,12 +25,9 @@ const Gallery: FC = () => {
           >
             <>
               {galleryItems.map((el, index) => (
-                <div key={index} className="gallery-item">
-                <Link to={el.image}  >
+                <Link to={el.image} key={index} className="gallery-item">
                   <img src={el.image} alt="gallery-img" />
                 </Link>
-                </div>
-                
               ))}
             </>
           </LightGallery>
