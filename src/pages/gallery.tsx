@@ -19,7 +19,7 @@ const Gallery: FC = () => {
       <LightGallery
         //ref={galleryRef}
         plugins={[lgZoom]}
-        speed={200}
+        speed={500}
         startClass="custom-start-class"
       >
         <a href={blog1} className="custom-start-class">
