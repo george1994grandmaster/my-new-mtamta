@@ -1,33 +1,47 @@
-import { FC, useRef, useEffect, useState } from "react";
+import { FC, useRef } from "react";
+import { Link } from 'react-router-dom';
 import LightGallery from 'lightgallery/react';
 import lgZoom from 'lightgallery/plugins/zoom';
-
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
-
-import blog1 from "../assets/img/blog1.png";
-import blog2 from "../assets/img/blog2.png";
-import blog3 from "../assets/img/blog3.png";
+import { galleryItems } from "../utils/data";
+import { VectorRight } from "../assets/svg-format-components";
 
 const Gallery: FC = () => {
+
+  const galleryRef = useRef<HTMLDivElement>(null);
+
+  const scrollUp = () => {
+    galleryRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }
  
   return (
-    <div className="Gallery">
-      <LightGallery
-        plugins={[lgZoom]}
-        speed={500}
-        startClass="custom-start-class"
-      >
-        <a href={blog1} className="custom-start-class">
-          <img src={blog1} alt="Image 1" loading="lazy" />
-        </a>
-        <a href={blog2} className="custom-start-class">
-          <img src={blog2} alt="Image 2" loading="lazy" />
-        </a>
-        <a href={blog3} className="custom-start-class">
-          <img src={blog3} alt="Image 3" loading="lazy" />
-        </a>
-      </LightGallery>
+    <div className="dark-wrapper">
+      <div className="container">
+        <div className="gallery" ref={galleryRef}>
+          <LightGallery
+            plugins={[lgZoom]}
+            speed={500}
+          >
+            <>
+              {galleryItems.map((el, index) => (
+                <div key={index} className="gallery-item">
+                <Link to={el.image}  >
+                  <img src={el.image} alt="gallery-img" />
+                </Link>
+                </div>
+                
+              ))}
+            </>
+          </LightGallery>
+        </div>
+        <button onClick={scrollUp} className="gallery-scroll-btn">
+          <span className="title fw-bold light">scroll up</span>
+          <div className="galery-scroll-icon">
+            <VectorRight/>
+          </div>
+        </button>
+      </div>
     </div>
   );
 }

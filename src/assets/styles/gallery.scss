@@ -1,5 +1,7 @@
 .gallery {
   column-count: 3;
+  column-gap: 0;
+  padding: 100px 0;
 }
 
 .lg-container {
@@ -11,7 +13,8 @@
 picture  {
 
   img {
-    height: 100% !important;
+    width: 70% !important;
+    height: 90% !important;
   }
   
 }
@@ -20,3 +23,65 @@ picture  {
   display: none;
 }
 
+.gallery-item {
+  display: block;
+  margin: 20px 10px;
+  
+  img {
+    display: block;
+    height: auto;
+    max-height: 450px;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      transform: scale(0.95);
+      opacity: 0.6;
+    }
+  }
+}
+
+.lg-outer {
+  background-color: $darkGrey;
+}
+
+.gallery-scroll-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 30px 0;
+  border: none;
+  background-color: transparent;
+  
+
+  &:hover {
+
+    span {
+      color: $bright;
+    }
+
+    svg {
+
+      path {
+        fill: $bright;
+        stroke: $bright;
+      }
+    }
+  }
+
+  span {
+    font-size: 19px;
+    transition: all 0.3s ease;
+  }
+
+  .galery-scroll-icon {
+    margin-left: 20px;
+    transform: rotate(180deg);
+    
+    svg {
+      width: 20px !important;
+
+      path {
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

@@ -27,6 +27,11 @@ header {
 
 	.logo-item-link {
 		width: 55px;
+		transition: all 0.3s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 
 	.area-items-content {

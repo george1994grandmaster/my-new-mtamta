@@ -32,7 +32,27 @@ import news11 from '../assets/img/news11.png';
 import news12 from '../assets/img/news12.png';
 import certificateLayout1 from '../assets/img/certificateLayout1.png';
 import certificateLayout2 from '../assets/img/certificateLayout2.png';
-
+import gallery1 from '../assets/img/gallery1.png';
+import gallery2 from '../assets/img/gallery2.png';
+import gallery3 from '../assets/img/gallery3.png';
+import gallery4 from '../assets/img/gallery4.png';
+import gallery5 from '../assets/img/gallery5.png';
+import gallery6 from '../assets/img/gallery6.png';
+import gallery7 from '../assets/img/gallery7.png';
+import gallery8 from '../assets/img/gallery8.png';
+import gallery9 from '../assets/img/gallery9.png';
+import gallery10 from '../assets/img/gallery10.png';
+import gallery11 from '../assets/img/gallery11.png';
+import gallery12 from '../assets/img/gallery12.png';
+import gallery13 from '../assets/img/gallery13.png';
+import gallery14 from '../assets/img/gallery14.png';
+import gallery15 from '../assets/img/gallery15.png';
+import gallery16 from '../assets/img/gallery16.png';
+import gallery17 from '../assets/img/gallery17.png';
+import gallery18 from '../assets/img/gallery18.png';
+import gallery19 from '../assets/img/gallery19.png';
+import gallery20 from '../assets/img/gallery20.png';
+import gallery21 from '../assets/img/gallery21.png';
 
 interface headerDatas {
   path: string;
@@ -56,7 +76,7 @@ interface homeSliderImages {
 export const homeSliderBannerimages: homeSliderImages[] = [
   { id: 1, image: 'https://cdn.shopify.com/s/files/1/0231/8024/7118/files/SHOPIFY_Home_Page_Banners_9_cac3c531-f636-4356-9e70-fb7ff5bb13cc_1920x.png?v=1685614143' },
   { id: 2, image: 'https://www.soelden.com/.imaging/mte/jcr/soelden/pxpx2000/dam/Sommer/SOELDEN/Navigationsbilder/soel_hochtour_windachscharte_01_14.jpg/jcr:content/soel-navibilder-wanderfuehrer.jpg' },
-  { id: 3, image: 'https://media.licdn.com/dms/image/C4E22AQEk9Hi3N2TN0Q/feedshare-shrink_800/0/1672757647018?e=1689206400&v=beta&t=8imMEQemqqR63J0BrrZRGbOZByeZ6H6ruJ2ePY0agOk' },
+  { id: 3, image: 'https://www.alpine-guides.com/wp-content/uploads/2016/07/alpineprivate-header1.jpg' },
   { id: 4, image: 'https://images.unsplash.com/photo-1633231610793-a5be285cb418?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW4lMjBndWlkZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80' },
 ];
 
@@ -479,6 +499,119 @@ export const certificate: certificateItems[] = [
     text: 'As in any profession, having a strong desire, motivation, and dedication is essential. If we add to this the qualification that corresponds to international standards, then success becomes inevitable. The knowledge acquired in the "School of Sustainable Tourism" will help you professionally, enabling you to acquire necessary skills, make friends, and become a member of the global professional network. Your new qualification will make you a highly sought-after employee in both local and international tourist companies.'
   }
 ]
+
+interface galleryItem {
+  id: number;
+  image: string;
+}
+
+export const galleryItems: galleryItem[] = [
+  {
+    id: 1,
+    image: gallery1,
+  },
+
+  {
+    id: 2,
+    image: gallery2,
+  },
+
+  {
+    id: 3,
+    image: gallery3,
+  },
+
+  {
+    id:4,
+    image: gallery4,
+  },
+
+  {
+    id: 5,
+    image: gallery5,
+  },
+
+  {
+    id: 6,
+    image: gallery6,
+  },
+
+  {
+    id: 7,
+    image: gallery7,
+  },
+
+  {
+    id: 8,
+    image: gallery8,
+  },
+
+  {
+    id: 9,
+    image: gallery9,
+  },
+
+  {
+    id: 10,
+    image: gallery10,
+  },
+
+  {
+    id: 11,
+    image: gallery11,
+  },
+
+  {
+    id: 12,
+    image: gallery12,
+  },
+
+  {
+    id: 13,
+    image: gallery13,
+  },
+
+  {
+    id: 14,
+    image: gallery14,
+  },
+
+  {
+    id: 15,
+    image: gallery15,
+  },
+
+  {
+    id: 16,
+    image: gallery16,
+  },
+
+  {
+    id: 17,
+    image: gallery17,
+  },
+
+  {
+    id: 18,
+    image: gallery18,
+  },
+
+  {
+    id: 19,
+    image: gallery19,
+  },
+
+  {
+    id: 20,
+    image: gallery20,
+  },
+
+  {
+    id: 21,
+    image: gallery21,
+  },
+]
+
 
 
 
