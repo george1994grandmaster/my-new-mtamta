@@ -99,7 +99,7 @@
     padding: 70px 0 100px 0;
   }
 
-  .MuiPaper-root {
+  /*.MuiPaper-root {
     border-bottom: 1px solid $light !important;
     background-color: transparent !important;
     box-shadow:none !important;
@@ -119,37 +119,37 @@
 
   .MuiAccordionDetails-root {
     padding: 15px 30px !important;
-  } 
+  } */
 
-  /*.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
     background-color: transparent;
     color: $light;
     box-shadow:none;
     border-bottom: 1px solid #ddd;
-  }*/
+  }
 
-  /*.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
     &.Mui-expanded  {
       margin: 0;
     }
-  }*/
+  }
 
-  /*.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
    
     &:before {
       display: none;
     }
-  }*/
+  }
 
-  /*.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
     padding: 8px 0;
   }
 
   .css-ahj2mt-MuiTypography-root {
     font-family: 'Montserrat', sans-serif;
   }
-*/
-  /*.css-15v22id-MuiAccordionDetails-root {
+
+  .css-15v22id-MuiAccordionDetails-root {
     padding-left: 30px;
     padding-right: 30px;
 
@@ -157,9 +157,9 @@
       font-size: calc(14px + 0.2vw);
       font-weight: 500;
     }
-  }*/
+  }
 
-  /*.css-o4b71y-MuiAccordionSummary-content {
+  .css-o4b71y-MuiAccordionSummary-content {
     align-items: center;
     padding: 0 30px;
     transition: all 0.5s ease;
@@ -178,7 +178,7 @@
       border-radius: 50%;
       background-color: $light;
     }
-  }*/
+  }
 }
 
 .accordion-background-slice {
