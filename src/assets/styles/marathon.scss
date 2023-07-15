@@ -151,7 +151,6 @@
       content: '';
       position: absolute;
       left: 0;
-      
       width: 12px;
       height: 12px;
       border-radius: 50%;
@@ -162,7 +161,7 @@
 
 .accordion-background-slice {
   padding: 100px 0 130px 0;
-  background-color: $bright;
+  //background-color: $bright;
 
   .main-title-content {
     transform: translateX(-45px);
