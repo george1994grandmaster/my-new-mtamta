@@ -53,6 +53,10 @@ import gallery18 from '../assets/img/gallery18.png';
 import gallery19 from '../assets/img/gallery19.png';
 import gallery20 from '../assets/img/gallery20.png';
 import gallery21 from '../assets/img/gallery21.png';
+import {Facebook} from '../assets/svg-format-components';
+import {Instagram} from '../assets/svg-format-components';
+import {Phone} from '../assets/svg-format-components';
+import {Email} from '../assets/svg-format-components';
 
 interface headerDatas {
   path: string;
@@ -66,6 +70,21 @@ export  const navbarLinksData: headerDatas[] = [
   { path: '/blog-media', label: 'MEDIA' },
   { path: '/gallery', label: 'GALLERY' },
   { path: '/get-in-touch', label: 'GET IN TOUCH' },
+];
+
+interface footerDatas {
+  path: string;
+  label: string;
+  icon?: any;
+}
+
+export const footerLinksData: footerDatas[] = [
+  { path: '', label: 'TERMS & CONDITIONS' },
+  { path: '', label: 'PROVACY POLICY' },
+  { path: '', icon: <Facebook />, label: 'FACEBOOK' },
+  { path: '', icon: <Instagram/>, label: 'INSTAGRAM' },
+  { path: '', icon: <Phone/>, label: '+784 234 567' },
+  { path: '', icon:  <Email/>, label: 'guidecompany@gmail.com' },
 ];
 
 interface homeSliderImages {
@@ -206,28 +225,28 @@ export const mountainSlider: mountSlides[] = [
     title: "Conquering the Tallest Peak in the United States - Mount Whitney",
     text: "Embark on an awe-inspiring journey to conquer the towering heights of Mount Whitney, located in the United States."
   },
-    
+
   {
     id: 2,
+    image: mountMatterhorn,
+    title: "Conquering the Iconic Matterhorn in the Swiss Alps",
+    text: "Challenge yourself to conquer the iconic Matterhorn, an emblem of the Swiss Alps and a symbol of mountaineering"
+  },
+    
+  {
+    id: 3,
     image: mountKarakoram,
     title: "Conquering the Mighty Karakoram Range",
     text :  "Embark on a daring expedition to conquer the formidable peaks of the Karakoram Range, spanning Pakistan, India, and China."
   },
 
   {
-    id: 3,
+    id: 4,
     image: mountCook,
     title: "Conquering the Magnificent Mount Cook in New Zealand",
     text:  "Experience the thrill of conquering the majestic heights of Mount Cook, the highest peak in New Zealand.",
   },
 
-  {
-    id: 4,
-    image: mountMatterhorn,
-    title: "Conquering the Iconic Matterhorn in the Swiss Alps",
-    text: "Challenge yourself to conquer the iconic Matterhorn, an emblem of the Swiss Alps and a symbol of mountaineering"
-  },
-  
   {
     id: 5,
     image: mountMoncBlanc,

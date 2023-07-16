@@ -2,6 +2,7 @@
 @import './variables';
 @import './globalStyles';
 @import './header';
+@import './footer';
 @import './home';
 @import './story';
 @import './marathon';
@@ -81,7 +82,7 @@ img {
 
 .container-fluid {
   position: relative;
-  padding-top: 90px;
+  padding-top: 86px;
 }
 
 .container {
@@ -139,7 +140,7 @@ img {
 .main-banner-wrapper {
   display: flex;
   width: 100%;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 86px);
   background-color: $bright;
   overflow: hidden;
 }
@@ -331,6 +332,81 @@ img {
 
 .popup-text {
   font-size: calc(14px + 0.1vw);
+}
+
+.logo-item-link {
+  width: 55px;
+  transition: all 0.3s ease;
+
+  img {
+    display: block
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.area-items-content {
+  display: flex;
+  align-items: center;
+}
+
+.area-item {
+  display: block;
+}
+
+.area-item-link {
+  display: block;
+  padding: 5px 13px;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  transition: 0.3s ease-in-out;
+}
+
+.area-item-link-bright {
+
+  &:hover {
+    color: $dark;
+
+    svg {
+
+      path {
+        fill: $dark;
+      }
+    }
+  }
+
+  svg {
+
+    path {
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.area-item-link-dark {
+  
+  &:hover {
+    color: $bright;
+
+    svg {
+
+      path {
+        fill: $bright;
+      }
+    }
+  }
+
+  svg {
+
+    path {
+      transition: 0.3s ease-in-out;
+    }
+  }
 }
 
 

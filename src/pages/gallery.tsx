@@ -17,27 +17,31 @@ const Gallery: FC = () => {
  
   return (
     <div className="dark-wrapper">
-      <div className="container">
-        <div className="gallery" ref={galleryRef}>
-          <LightGallery
-            plugins={[lgZoom]}
-            speed={500}
-          >
-            <>
-              {galleryItems.map((el, index) => (
-                <Link to={el.image} key={index} className="gallery-item">
-                  <img src={el.image} alt="gallery-img" />
-                </Link>
-              ))}
-            </>
-          </LightGallery>
-        </div>
-        <button onClick={scrollUp} className="gallery-scroll-btn">
-          <span className="title fw-bold light">scroll up</span>
-          <div className="galery-scroll-icon">
-            <VectorRight/>
+      <div className="vertical-large-spacing" ref={galleryRef}>
+        <div className="container" >
+          <div className="gallery" >
+            <LightGallery
+              plugins={[lgZoom]}
+              speed={500}
+            >
+              <>
+                {galleryItems.map((el, index) => (
+                  <Link to={el.image} key={index} className="gallery-item">
+                    <img src={el.image} alt="gallery-img" />
+                  </Link>
+                ))}
+              </>
+            </LightGallery>
           </div>
-        </button>
+          <div className="scrollUp-content">
+            <button onClick={scrollUp} className="gallery-scroll-btn">
+              <span className="title fw-bold light">scroll up</span>
+              <div className="gallery-scroll-icon">
+                <VectorRight/>
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

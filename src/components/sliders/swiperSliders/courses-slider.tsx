@@ -22,7 +22,7 @@ const CoursesSlider: FC<BlogSliderProps> = ({ handlePrevClick, handleNextClick }
     simulateTouch: false
   };
   return (
-    <>
+    <div className="vertical-large-spacing">
       {courseSlides.map((el, index) => (
         <Swiper key={index}
           effect={'creative'}
@@ -161,7 +161,7 @@ const CoursesSlider: FC<BlogSliderProps> = ({ handlePrevClick, handleNextClick }
           </div>
         </Swiper>
       ))}
-    </>
+    </div>
   );
 };
 

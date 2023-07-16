@@ -24,49 +24,6 @@ header {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 15px 0;
-
-	.logo-item-link {
-		width: 55px;
-		transition: all 0.3s ease;
-
-		&:hover {
-			transform: scale(1.1);
-		}
-	}
-
-	.area-items-content {
-		display: flex;
-		align-items: center;
-
-		.area-item {
-			display: block;
-			
-			.area-item-link {
-				display: block;
-				padding: 5px 13px;
-				color: #fff;
-				font-size: 15px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: 22px;
-				transition: 0.3s ease-in-out;
-			}
-
-			.area-item-link-bright {
-
-				&:hover {
-					color: $bright;
-				}
-			}
-
-			.area-item-link-dark {
-				
-				&:hover {
-					color: $dark;
-				}
-			}
-		}
-	}
 }
 
 .mobile-navbar {

@@ -32,7 +32,7 @@ const Header: FC = () => {
   return (
     <>
       <header style={{ backgroundColor, borderBottom: backgroundColor === '#F05E47' ? '1px solid rgb(235, 231, 231)' : '1px solid rgb(145, 143, 143)', }}>
-        <div className='header-container'>
+        <div className='container'>
           <div className='header-area'>
             <Link to='/' className='logo-item-link'>
               <img src={headerLogo} alt="header-logo" />
@@ -42,7 +42,7 @@ const Header: FC = () => {
                 <li className='area-item' key={index}>
                   <Link
                     to={link.path}
-                    className={`area-item-link ${backgroundColor === '#003642' ? 'area-item-link-bright' : backgroundColor === '#F05E47' ? 'area-item-link-dark' : ''}`}
+                    className={`area-item-link ${backgroundColor === '#003642' ? 'area-item-link-dark' : backgroundColor === '#F05E47' ? 'area-item-link-bright' : ''}`}
                   >
                     {link.label}
                   </Link>

@@ -1,0 +1,33 @@
+footer {
+  position: relative;
+}
+
+.footer-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.footer-sub-text {
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.icon-text-content {
+  display: flex;
+  align-items: center;
+  
+  svg {
+    margin-right: 15px;
+  }
+}
+
+footer {
+
+  .area-item {
+    margin-right: 40px;
+  }
+}
