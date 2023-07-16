@@ -8,6 +8,14 @@
 		padding-right: 70px;
 	}
 }
+
+.swiper-button-prev, .swiper-button-next {
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.07);
+	}
+}
  
 
 .home-swiper {

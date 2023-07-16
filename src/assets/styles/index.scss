@@ -358,24 +358,30 @@ img {
 
 .area-item-link {
   display: block;
+  position: relative;
   padding: 5px 13px;
-  color: #fff;
+  color: $light;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
   transition: 0.3s ease-in-out;
+
+  &:hover {
+    border-radius: 50px
+  }
 }
 
 .area-item-link-bright {
 
   &:hover {
-    color: $dark;
-
+    background-color: $light;
+    color: $bright;
+    
     svg {
 
       path {
-        fill: $dark;
+        fill: $bright;
       }
     }
   }
@@ -391,12 +397,13 @@ img {
 .area-item-link-dark {
   
   &:hover {
-    color: $bright;
-
+    background-color: $bright;
+    color: $light;
+   
     svg {
 
       path {
-        fill: $bright;
+        fill: $light;
       }
     }
   }
