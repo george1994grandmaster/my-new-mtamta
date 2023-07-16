@@ -96,16 +96,18 @@ const Marathon: FC = () => {
           <div className="marathon-dark-pattern">
             <img src={darkPattern} alt="darkPattern" />
           </div>
-          <div className="container">
-            <div className="team-title-content">
-              <div className="team-star">
-                <img src={starComplete} alt="tems-star" />
+          <div className="vertical-large-spacing">
+            <div className="container">
+              <div className="team-title-content">
+                <div className="team-star">
+                  <img src={starComplete} alt="tems-star" />
+                </div>
+                <h1 className="team-title title bright fw-strong">
+                  ACTUAL NEWS
+                </h1>
               </div>
-              <h1 className="team-title title bright fw-strong">
-                ACTUAL NEWS
-              </h1>
+              <Cards/>
             </div>
-            <Cards/>
           </div>
         </div>
       </div>

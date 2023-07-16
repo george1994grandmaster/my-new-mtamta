@@ -104,10 +104,14 @@
   }
 
   .MuiPaper-root {
-    margin: 16px 0 !important;
+    padding: 12px 0 !important;
     border-bottom: 1px solid $light !important;
     background-color: transparent !important;
     box-shadow:none !important;
+
+    &.Mui-expanded {
+      margin: 0;
+    }
 
     &::before {
       display: none;
@@ -230,7 +234,7 @@
 
 .team-title-content {
   position: relative;
-  padding: 150px 0;
+  padding: 50px 0 150px 0;
 }
 
 .team-title {
@@ -254,7 +258,7 @@
 .team-star {
   position: absolute;
   left: 0;
-  top: 100px;
+  bottom: 100px;
   width: 250px;
 }
 
